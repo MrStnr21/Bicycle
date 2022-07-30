@@ -1,0 +1,114 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: #d7d7d7;
+}
+
+.page {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  background-color: #d7d7d7;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.header {
+  max-width: 1440px;
+}
+
+.menu__container {
+  margin: 0 120px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 34px;
+}
+.menu__item {
+  padding: 28px 0;
+}
+.menu__link {
+  color: #151515;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.menu__link:hover {
+  opacity: 0.75;
+}
+
+.about {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  display: flex;
+}
+.about__info {
+  margin: 0;
+  padding: 80px 250px 209px 120px;
+  max-width: 460px;
+}
+.about__heading {
+  margin: 0;
+  padding-bottom: 50px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+}
+.about__text {
+  margin: 0;
+  padding-bottom: 50px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.about__button {
+  margin-bottom: 167px;
+  padding: 16px 10px;
+  width: 180px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(36, 180, 126);
+  background-image: linear-gradient(transparent, rgb(255, 183, 0));
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+}
+.about__button:hover {
+  background-position: 0 200%;
+}
+.about__name-container {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.about__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.about__stripe {
+  width: 130px;
+  border: 1px solid rgb(215, 212, 212);
+}
+.about__image {
+  background-image: url(../images/about-forest.png);
+  width: 610px;
+  height: 836px;
+}/*# sourceMappingURL=index.css.map */
