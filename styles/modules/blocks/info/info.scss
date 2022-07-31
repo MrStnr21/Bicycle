@@ -1,0 +1,40 @@
+.info {
+  margin: 0;
+  padding: 80px 250px 209px 120px;
+  max-width: 460px;
+
+  &__heading {
+    margin: 0;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__name-container {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &__stripe {
+    width: 130px;
+    border: 1px solid rgba(215, 212, 212, 1);
+  }
+}

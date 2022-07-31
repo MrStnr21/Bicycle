@@ -1,0 +1,17 @@
+.popup {
+  position: absolute;
+  top: 347px;
+  right: 370px;
+  height: 430px;
+
+  &__image {
+    width: 340px;
+    height: 260px;
+    box-shadow: -20px 60px 220px rgb(0 0 0 / 44%);
+    border-radius: 20px;
+    position: sticky;
+    top: 347px;
+    padding: 20px 50px;
+    background-color: #F4F4F4;
+  }
+}

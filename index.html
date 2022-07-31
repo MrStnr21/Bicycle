@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bicycle</title>
-        <link rel="stylesheet" href="./styles/index.css" />
-    </head>
-    <body class="body">
-        <div class="page">
-            <header class="header">
-                <nav class="menu header__menu">
-                    <ul class="menu__container">
-                        <li class="menu__item">
-                            <a href="#" class="link menu__link"
-                                >Покрытия и градиенты</a
-                            >
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="link menu__link">Велосипеды</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="link menu__link">Тренировки</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="content">
-                <section class="about">
-                    <div class="about__info">
-                        <h1 class="about__heading">
-                            Шоссе, ТТ&nbsp;и&nbsp;Грэвел
-                        </h1>
-                        <p class="about__text">
-                            Триатлонные старты, горные серпантины или грейвел
-                            заезды по&nbsp;живописным маршрутам&nbsp;&mdash;
-                            нужно только определиться с&nbsp;выбором велосипеда
-                            и&nbsp;отправиться в путь.
-                        </p>
-                        <button type="button" class="about__button">
-                            Подробнее
-                        </button>
-                        <div class="about__name-container">
-                            <p class="about__name">Cannondale Systemsix</p>
-                            <div class="about__stripe"></div>
-                        </div>
-                    </div>
-                    <div class="about__image"></div>
-                    <div class="about__popup-image" url="./images/about-forest.png"></div>
-                </section>
-            </main>
-            <footer class="footer"></footer>
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bicycle</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body class="body">
+    <div class="page">
+      <header class="header">
+        <nav class="menu header__menu">
+          <ul class="menu__container">
+            <li class="menu__item">
+              <a href="#" class="link menu__link">Покрытия и градиенты</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="link menu__link">Велосипеды</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="link menu__link">Тренировки</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <section class="about">
+          <div class="info">
+            <h1 class="info__heading">Шоссе, ТТ&nbsp;и&nbsp;Грэвел</h1>
+            <p class="info__text">
+              Триатлонные старты, горные серпантины или грейвел заезды
+              по&nbsp;живописным маршрутам&nbsp;&mdash; нужно только
+              определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в путь.
+            </p>
+            <button type="button" class="button">
+              <span class="button__text">Подробнее</span>
+            </button>
+            <div class="info__name-container">
+              <p class="info__name">Cannondale Systemsix</p>
+              <div class="info__stripe"></div>
+            </div>
+          </div>
+          <img
+            class="about__image"
+            src="./images/about-forest.png"
+            alt="трасса в лесу"
+          />
+          <div class="popup">
+            <img
+              class="popup__image"
+              src="./images/about_bicycle.png"
+              alt="велосипед"
+            />
+          </div>
+        </section>
+        <section class="quote">
+          <img src="./images/quote-track.png" class="quote__image" alt="трасса в горах" />
+          <div class="quote__text">
+            <h2 class="quote__heading">
+              &laquo;Катайся много или мало, долго или коротко, как
+              хочешь&nbsp;&mdash; но&nbsp;катайся&raquo;
+            </h2>
+            <p class="quote__name">Эдди Меркс</p>
+            <p class="quote__speciality">Велогонщик</p>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
 </html>

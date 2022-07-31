@@ -1,7 +1,7 @@
 .body {
   margin: 0;
   padding: 0;
-  background-color: #d7d7d7;
+  background-color: #F4F4F4;
 }
 
 .page {
@@ -10,7 +10,7 @@
   margin: 0 auto;
   padding: 0;
   position: relative;
-  background-color: #d7d7d7;
+  background-color: #F4F4F4;
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -52,28 +52,55 @@
   margin: 0 auto;
   padding: 0;
   max-width: 1440px;
+  min-height: 856px;
+  position: relative;
   display: flex;
 }
-.about__info {
+.about__image {
+  width: 610px;
+  height: 836px;
+  margin-top: 20px;
+  border: 0;
+}
+
+.info {
   margin: 0;
   padding: 80px 250px 209px 120px;
   max-width: 460px;
 }
-.about__heading {
+.info__heading {
   margin: 0;
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 55px;
   line-height: 60px;
 }
-.about__text {
+.info__text {
   margin: 0;
   padding-bottom: 50px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
 }
-.about__button {
+.info__name-container {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.info__name {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.info__stripe {
+  width: 130px;
+  border: 1px solid rgb(215, 212, 212);
+}
+
+.button {
+  position: relative;
   margin-bottom: 167px;
   padding: 16px 10px;
   width: 180px;
@@ -84,31 +111,84 @@
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  background-color: rgb(36, 180, 126);
-  background-image: linear-gradient(transparent, rgb(255, 183, 0));
-  background-size: 200% 200%;
-  background-repeat: no-repeat;
-  transition: 0.2s;
+  background: rgb(36, 180, 126);
+  overflow: hidden;
+  transition: all 0.4s;
 }
-.about__button:hover {
-  background-position: 0 200%;
+.button__text {
+  z-index: 1;
+  position: relative;
 }
-.about__name-container {
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgb(49, 158, 117);
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+.button:hover:before {
+  transform: translateX(0);
+}
+
+.popup {
+  position: absolute;
+  top: 347px;
+  right: 370px;
+  height: 430px;
+}
+.popup__image {
+  width: 340px;
+  height: 260px;
+  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44);
+  border-radius: 20px;
+  position: sticky;
+  top: 347px;
+  padding: 20px 50px;
+  background-color: #F4F4F4;
+}
+
+.quote {
+  margin: 0;
+  padding: 0;
   display: flex;
-  column-gap: 30px;
-  align-items: center;
+  column-gap: 80px;
 }
-.about__name {
+.quote__image {
+  padding: 120px 0 60px 120px;
+  max-width: 650px;
+}
+.quote__text {
+  padding: 120px 120px 60px 0;
+  max-width: 470px;
+}
+.quote__heading {
+  margin: 0;
+  padding: 0;
+  min-height: 394px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 44px;
+}
+.quote__name {
+  margin: 0;
+  padding-bottom: 6px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+.quote__speciality {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 28px;
 }
-.about__stripe {
-  width: 130px;
-  border: 1px solid rgb(215, 212, 212);
-}
-.about__image {
-  background-image: url(../images/about-forest.png);
-  width: 610px;
-  height: 836px;
+
+.footer {
+  height: 1000px;
+  width: 1000px;
 }/*# sourceMappingURL=index.css.map */
