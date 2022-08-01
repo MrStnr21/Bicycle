@@ -74,6 +74,7 @@
   font-weight: 700;
   font-size: 55px;
   line-height: 60px;
+  letter-spacing: -0.5px;
 }
 .info__text {
   margin: 0;
@@ -81,6 +82,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
 }
 .info__name-container {
   display: flex;
@@ -152,7 +155,7 @@
 }
 
 .quote {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
   column-gap: 80px;
@@ -172,6 +175,7 @@
   font-weight: 600;
   font-size: 34px;
   line-height: 44px;
+  letter-spacing: -0.5px;
 }
 .quote__name {
   margin: 0;
@@ -186,6 +190,61 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.track {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.track__heading {
+  margin: 0;
+  padding: 60px 0 50px 120px;
+  max-width: 460px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+.track__text {
+  margin: 0;
+  padding: 0 0 80px 120px;
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #222222;
+  opacity: 0.7;
+}
+.track__symbol {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 706px;
+  left: 119px;
+}
+
+.type {
+  margin: 0;
+  padding: 0 0 50px 120px;
+  display: flex;
+  overflow-x: scroll;
+  column-gap: 40px;
+}
+.type__item {
+  list-style: none;
+  width: 650px;
+  height: 400px;
+}
+.type__image {
+  margin: 0;
+  padding: 0;
+  width: 650px;
+  height: 400px;
 }
 
 .footer {

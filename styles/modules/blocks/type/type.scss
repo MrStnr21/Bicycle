@@ -1,0 +1,20 @@
+.type {
+    margin: 0;
+    padding: 0 0 50px 120px;
+    display: flex;
+    overflow-x: scroll;
+    column-gap: 40px;
+
+    &__item {
+        list-style: none;
+        width: 650px;
+        height: 400px;
+    }
+
+    &__image {
+        margin: 0;
+        padding: 0;
+        width: 650px;
+        height: 400px;
+    }
+}
