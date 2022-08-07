@@ -1,0 +1,32 @@
+.symbol {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: 706px;
+  left: 120px;
+  background-repeat: no-repeat;
+  background-image: url(../images/track-highway-symbol.svg);
+
+  &__container {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 706px;
+    left: 119px;
+  }
+
+  &__vector {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    position: absolute;
+    bottom: 16px;
+    left: 12px;
+
+    &_hidden {
+      display: none;
+    }
+  }
+}

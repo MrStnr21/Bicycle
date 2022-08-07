@@ -1,0 +1,21 @@
+.bicycles {
+  margin: 0 auto;
+  padding: 0;
+
+  &__menu {
+    margin: 0 auto;
+    padding: 60px 120px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__heading {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+  }
+}

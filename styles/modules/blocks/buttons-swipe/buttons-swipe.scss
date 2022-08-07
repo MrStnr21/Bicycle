@@ -1,0 +1,44 @@
+.buttons-swipe {
+  margin: 0;
+  padding: 0 0 60px 120px;
+  display: flex;
+  column-gap: 20px;
+
+  &__button-left {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__button-right {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

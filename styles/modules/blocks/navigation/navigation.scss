@@ -1,0 +1,40 @@
+.navigation {
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 40px;
+  }
+
+  &__item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__button {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: right;
+    color: #222222;
+    background-color: #F4F4F4;
+    opacity: 0.7;
+    border: 0;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &_active {
+      color: #151515;
+      opacity: 1;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}

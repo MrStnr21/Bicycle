@@ -3,6 +3,12 @@
   padding: 0;
   position: relative;
 
+  &__about {
+    &_hidden {
+      display: none;
+    }
+  }
+
   &__heading {
     margin: 0;
     padding: 60px 0 50px 120px;
@@ -22,15 +28,5 @@
     line-height: 28px;
     color: $text-color;
     opacity: 0.7;
-  }
-
-  &__symbol {
-    margin: 0;
-    padding: 0;
-    width: 100px;
-    height: 40px;
-    position: absolute;
-    top: 706px;
-    left: 119px;
   }
 }
