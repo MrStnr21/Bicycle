@@ -1,10 +1,8 @@
 .grid {
-  margin: 0 auto;
-  padding: 0 120px 60px;
+  @include marginPadding(0 auto, 0 120px 60px);
 
   &__navigation {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     display: flex;
     column-gap: 30px;
 
@@ -14,8 +12,7 @@
   }
 
   &__item {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     list-style: none;
     cursor: pointer;
 
@@ -25,15 +22,13 @@
   }
 
   &__link {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     text-decoration: none;
     color: #151515;
   }
 
   &__image {
-    margin: 0;
-    padding: 20px;
+    @include marginPadding(0, 20px);
     width: 340px;
     height: 340px;
     background-color: #f4f4f4;
@@ -42,10 +37,13 @@
   }
 
   &__name {
-    margin: 0;
-    padding: 22px 0 0 6px;
+    @include marginPadding(0, 22px 0 0 6px);
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
+
+    &_dark-theme {
+      color: $heading-color_dark-theme;
+    }
   }
 }

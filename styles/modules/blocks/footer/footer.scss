@@ -1,11 +1,13 @@
 .footer {
-  margin: 0 auto;
-  padding: 0;
-  background-color: #efefef;
+  @include marginPadding(0px, 0 auto);
+  background-color: $background-color;
+
+  &_dark-theme {
+    background-color: $background-color_dark-theme;
+  }
 
   &__container {
-    margin: 0;
-    padding: 80px 0 60px 120px;
+    @include marginPadding(0, 80px 0 60px 120px);
     max-width: 360px;
   }
 
@@ -16,12 +18,15 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    color: #151515;
+    color: $heading-color;
+
+    &_dark-theme {
+      color: $heading-color_dark-theme;
+    }
   }
 
   &__form {
-    margin-bottom: 100px;
-    padding: 11px 20px;
+    @include marginPadding(0 0 100px 0, 11px 20px);
     width: 320px;
     height: 50px;
     font-weight: 500;
@@ -34,9 +39,20 @@
     border-radius: 4px;
   }
 
+  &__privacy {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #cfcfcf;
+
+    &_dark-theme {
+      color: #565656;
+    }
+  }
+
   &__switcher {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     display: flex;
     column-gap: 22px;
     position: absolute;
@@ -46,12 +62,11 @@
   }
 
   &__button {
+    @include marginPadding(0, 0);
     height: 24px;
     width: 44px;
     border-radius: 9999px;
     background: #ffffff;
-    margin: 0;
-    padding: 0;
     border: none;
     cursor: pointer;
     position: relative;
@@ -71,7 +86,7 @@
     }
 
     &_on::after {
-        left: 22px;
+      left: 22px;
     }
   }
 }

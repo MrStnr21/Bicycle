@@ -1,7 +1,6 @@
 .button {
   position: relative;
-  margin-bottom: 167px;
-  padding: 16px 10px;
+  @include marginPadding(0 0 167px 0, 16px 10px);
   width: 180px;
   color: white;
   font-weight: 600;

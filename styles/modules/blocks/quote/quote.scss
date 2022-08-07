@@ -1,44 +1,55 @@
 .quote {
-  margin: 0 auto;
-  padding: 0;
+  @include marginPadding(0 auto, 0);
   display: flex;
   column-gap: 80px;
 
   &__image {
-    padding: 120px 0 60px 120px;
+    @include marginPadding(0, 120px 0 60px 120px);
     max-width: 650px;
   }
 
   &__text {
+    @include marginPadding(0, 120px 120px 60px 0);
     padding: 120px 120px 60px 0;
     max-width: 470px;
   }
 
   &__heading {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     min-height: 394px;
     font-weight: 600;
     font-size: 34px;
     line-height: 44px;
     letter-spacing: -0.5px;
+    color: $heading-color;
+
+    &_dark-theme {
+      color: $heading-color_dark-theme;
+    }
   }
 
   &__name {
-    margin: 0;
-    padding-bottom: 6px;
+    @include marginPadding(0, 0 0 6px 0);
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
+    color: $heading-color;
+
+    &_dark-theme {
+      color: $heading-color_dark-theme;
+    }
   }
 
   &__speciality {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     color: $text-color;
     opacity: 0.7;
+
+    &_dark-theme {
+      color: $text-color_dark-theme;
+    }
   }
 }

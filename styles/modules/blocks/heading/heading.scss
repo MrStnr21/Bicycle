@@ -1,0 +1,8 @@
+.heading {
+    @include heading;
+    color: $heading-color;
+
+    &_dark-theme {
+        color: $heading-color_dark-theme;
+    }
+}

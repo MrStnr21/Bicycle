@@ -1,41 +1,26 @@
 .training {
-  margin: 0 auto;
-  padding: 0;
+  @include marginPadding(0 auto, 0);
   display: flex;
   column-gap: 160px;
 
   &__heading {
-    margin: 0;
-    padding: 150px 0 50px 120px;
+    @include marginPadding(0, 150px 0 50px 120px);
     max-width: 460px;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 60px;
-    letter-spacing: -0.5px;
-    color: #151515;
   }
 
   &__description {
-    margin: 0;
-    padding-left: 120px;
+    @include marginPadding(0, 0 0 0 120px);
     min-height: 322px;
     max-width: 460px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #222222;
-    opacity: 0.7;
   }
 
   &__menu {
-    margin: 0;
-    padding: 0 0 120px 120px;
+    @include marginPadding(0, 0 0 120px 120px);
     max-width: 460px;
   }
 
   &__list {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     display: flex;
     column-gap: 30px;
   }
@@ -45,8 +30,7 @@
   }
 
   &__link {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     min-height: 28px;
     font-weight: 600;
     font-size: 18px;
@@ -55,14 +39,17 @@
     text-decoration: none;
     transition: 0.1s ease-out;
 
+    &_dark-theme {
+      color: $heading-color_dark-theme;
+    }
+
     &:hover {
       opacity: 0.75;
     }
   }
 
   &__image {
-    margin: 0;
-    padding: 150px 120px 120px 0;
+    @include marginPadding(0, 150px 120px 120px 0);
     width: 580px;
     height: 460px;
   }

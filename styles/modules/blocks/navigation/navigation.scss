@@ -1,14 +1,12 @@
 .navigation {
   &__list {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     display: flex;
     column-gap: 40px;
   }
 
   &__item {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     list-style: none;
   }
 
@@ -17,8 +15,8 @@
     font-size: 18px;
     line-height: 28px;
     text-align: right;
-    color: #222222;
-    background-color: #F4F4F4;
+    color: $text-color;
+    background-color: rgba(0, 0, 0, 0);
     opacity: 0.7;
     border: 0;
     cursor: pointer;
@@ -28,13 +26,22 @@
       opacity: 0.6;
     }
 
+    &_dark-theme {
+      color: $text-color_dark-theme;
+    }
+
     &_active {
-      color: #151515;
+      color: $heading-color;
       opacity: 1;
 
-      &:hover {
-        opacity: 0.75;
+      &_dark-theme {
+        color: $heading-color_dark-theme;
+        opacity: 1;
       }
+    }
+
+    &:hover {
+      opacity: 0.75;
     }
   }
 }

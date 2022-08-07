@@ -1,6 +1,5 @@
 .about {
-  margin: 0 auto;
-  padding: 0;
+  @include marginPadding(0 auto, 0);
   max-width: 1440px;
   min-height: 856px;
   position: relative;

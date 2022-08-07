@@ -1,0 +1,8 @@
+.text {
+    @include text;
+    color: $text-color;
+
+    &_dark-theme {
+        color: $text-color_dark-theme;
+    }
+}

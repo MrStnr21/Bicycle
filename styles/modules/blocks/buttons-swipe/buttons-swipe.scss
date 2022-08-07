@@ -1,12 +1,10 @@
 .buttons-swipe {
-  margin: 0;
-  padding: 0 0 60px 120px;
+  @include marginPadding(0, 0 0 60px 120px);
   display: flex;
   column-gap: 20px;
 
   &__button-left {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     width: 50px;
     height: 50px;
     display: flex;
@@ -17,15 +15,30 @@
     border-radius: 50%;
     cursor: pointer;
     transition: 0.1s ease-out;
+
+    &_dark-theme {
+      background-color: rgba(67, 67, 67, 1);
+    }
 
     &:hover {
       opacity: 0.6;
     }
   }
 
+  &__arrow-left {
+    display: block;
+
+    &_dark-theme {
+      display: block;
+    }
+
+    &_hidden {
+      display: none;
+    }
+  }
+
   &__button-right {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     width: 50px;
     height: 50px;
     display: flex;
@@ -37,8 +50,24 @@
     cursor: pointer;
     transition: 0.1s ease-out;
 
+    &_dark-theme {
+      background-color: rgba(67, 67, 67, 1);
+    }
+
     &:hover {
       opacity: 0.6;
+    }
+  }
+
+  &__arrow-right {
+    display: block;
+
+    &_dark-theme {
+      display: block;
+    }
+
+    &_hidden {
+      display: none;
     }
   }
 }

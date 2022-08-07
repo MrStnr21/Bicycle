@@ -1,25 +1,9 @@
 .info {
-  margin: 0;
-  padding: 80px 250px 209px 120px;
+  @include marginPadding(0, 80px 250px 209px 120px);
   max-width: 460px;
 
   &__heading {
-    margin: 0;
-    padding-bottom: 50px;
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 60px;
-    letter-spacing: -0.5px;
-  }
-
-  &__text {
-    margin: 0;
-    padding-bottom: 50px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: $text-color;
-    opacity: 0.7;
+    @include marginPadding(0, 0 0 50px 0);
   }
 
   &__name-container {
@@ -29,15 +13,22 @@
   }
 
   &__name {
-    margin: 0;
-    padding: 0;
+    @include marginPadding(0, 0);
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
+
+    &_dark-theme {
+      color: $heading-color_dark-theme;
+    }
   }
 
   &__stripe {
     width: 130px;
     border: 1px solid rgba(215, 212, 212, 1);
+
+    &_dark-theme {
+      border: 1px solid rgba(112, 112, 112, 1);
+    }
   }
 }
