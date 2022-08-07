@@ -9,6 +9,7 @@
   &__container {
     @include marginPadding(0, 80px 0 60px 120px);
     max-width: 360px;
+    position: relative;
   }
 
   &__heading {
@@ -32,11 +33,49 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 28px;
-    color: #151515;
+    color: #222222;
     background-color: rgba(0, 0, 0, 0);
     opacity: 0.7;
     border: 1px solid rgba(199, 199, 199, 0.5);
     border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      color: #151515;
+    }
+
+    &_dark-theme {
+      color: #ffffff;
+      opacity: 0.7;
+      border: 1px solid rgba(125, 125, 125, 0.5);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__submit {
+    @include marginPadding(0, 0);
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: right;
+    width: 16px;
+    height: 28px;
+    border: none;
+    top: 217px;
+    left: 436px;
+    cursor: pointer;
+    display: none;
+
+    &_on {
+      display: block;
+    }
   }
 
   &__privacy {
@@ -61,6 +100,18 @@
     align-items: center;
   }
 
+  &__light {
+    &_dark-theme {
+      opacity: 0.3;
+    }
+  }
+
+  &__dark {
+    &_dark-theme {
+      opacity: 0.3;
+    }
+  }
+
   &__button {
     @include marginPadding(0, 0);
     height: 24px;
@@ -71,6 +122,10 @@
     cursor: pointer;
     position: relative;
     transition-duration: 0.3s;
+
+    &_dark-theme {
+      background: rgba(84, 84, 84, 1);
+    }
 
     &::after {
       content: "";
