@@ -2,7 +2,7 @@
   @include marginPadding(0, 0 0 50px 120px);
   display: flex;
   overflow-x: scroll;
-  column-gap: 40px;
+  scroll-behavior: smooth;
 
   &::-webkit-scrollbar {
     width: 0;
@@ -12,6 +12,7 @@
     list-style: none;
     width: 650px;
     height: 400px;
+    padding-right: 40px;
   }
 
   &__image {
