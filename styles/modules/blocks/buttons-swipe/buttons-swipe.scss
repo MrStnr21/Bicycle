@@ -7,9 +7,9 @@
     @include marginPadding(0, 0);
     width: 50px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(../images/arrow-left.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
     background-color: #ebebeb;
     border: none;
     border-radius: 50%;
@@ -18,22 +18,11 @@
 
     &_dark-theme {
       background-color: rgba(67, 67, 67, 1);
+      background-image: url(../images/arrow-left-dark.svg);
     }
 
     &:hover {
       opacity: 0.6;
-    }
-  }
-
-  &__arrow-left {
-    display: block;
-
-    &_dark-theme {
-      display: block;
-    }
-
-    &_hidden {
-      display: none;
     }
   }
 
@@ -41,9 +30,9 @@
     @include marginPadding(0, 0);
     width: 50px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url(../images/arrow-right.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
     background-color: #ebebeb;
     border: none;
     border-radius: 50%;
@@ -51,23 +40,12 @@
     transition: 0.1s ease-out;
 
     &_dark-theme {
+      background-image: url(../images/arrow-right-dark.svg);
       background-color: rgba(67, 67, 67, 1);
     }
 
     &:hover {
       opacity: 0.6;
-    }
-  }
-
-  &__arrow-right {
-    display: block;
-
-    &_dark-theme {
-      display: block;
-    }
-
-    &_hidden {
-      display: none;
     }
   }
 }

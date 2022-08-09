@@ -18,6 +18,9 @@ const gridNameDark = document.querySelectorAll(".grid__name");
 const trainingLinkDark = document.querySelectorAll(".training__link");
 const footerDark = document.querySelector(".footer");
 const footerHeadingDark = document.querySelector(".footer__heading");
+const foooterFormContainerDark = document.querySelector(
+  ".footer__form-container"
+);
 const footerFormDark = document.querySelector(".footer__form");
 const footerSubmitDark = document.querySelector(".footer__submit");
 const footerPrivacyDark = document.querySelector(".footer__privacy");
@@ -30,7 +33,7 @@ function switchDarkTemplate(element, classname) {
   element.classList.toggle(`${classname}`);
 }
 
-function switchThemeSiblings(element) {
+function switchThemeSiblings() {
   headingDark.forEach((el) => {
     el.classList.toggle("heading_dark-theme");
   });
@@ -71,6 +74,10 @@ function switchTheme() {
   );
   switchDarkTemplate(footerDark, "footer_dark-theme");
   switchDarkTemplate(footerHeadingDark, "footer__heading_dark-theme");
+  switchDarkTemplate(
+    foooterFormContainerDark,
+    "footer__form-container_dark-theme"
+  );
   switchDarkTemplate(footerFormDark, "footer__form_dark-theme");
   switchDarkTemplate(footerSubmitDark, "footer__submit_dark-theme");
   switchDarkTemplate(footerPrivacyDark, "footer__privacy_dark-theme");

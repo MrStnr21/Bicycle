@@ -4,6 +4,10 @@
   overflow-x: scroll;
   column-gap: 40px;
 
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
   &__item {
     list-style: none;
     width: 650px;

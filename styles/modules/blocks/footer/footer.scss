@@ -26,19 +26,35 @@
     }
   }
 
-  &__form {
-    @include marginPadding(0 0 100px 0, 11px 20px);
+  &__form-container {
+    @include marginPadding(0 0 100px 0, 0);
     width: 320px;
     height: 50px;
+    border: 1px solid rgba(199, 199, 199, 0.5);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &_dark-theme {
+      border: 1px solid rgba(125, 125, 125, 0.5);
+    }
+  }
+
+  &__form {
+    width: 240px;
     font-weight: 500;
     font-size: 13px;
     line-height: 28px;
     color: #222222;
     background-color: rgba(0, 0, 0, 0);
     opacity: 0.7;
-    border: 1px solid rgba(199, 199, 199, 0.5);
-    border-radius: 4px;
+    border: none;
     cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    outline: none;
 
     &:hover {
       color: #151515;
@@ -47,7 +63,6 @@
     &_dark-theme {
       color: #ffffff;
       opacity: 0.7;
-      border: 1px solid rgba(125, 125, 125, 0.5);
 
       &:hover {
         opacity: 1;
@@ -57,8 +72,7 @@
 
   &__submit {
     @include marginPadding(0, 0);
-    position: absolute;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(21, 21, 21, 1);
     background-color: rgba(0, 0, 0, 0);
     font-style: normal;
     font-weight: 500;
@@ -68,13 +82,20 @@
     width: 16px;
     height: 28px;
     border: none;
-    top: 217px;
-    left: 436px;
     cursor: pointer;
-    display: none;
+    transition: 0.1s ease-in-out;
+    visibility: hidden;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &_dark-theme {
+      color: rgba(255, 255, 255, 1);
+    }
 
     &_on {
-      display: block;
+      visibility: visible;
     }
   }
 
@@ -135,7 +156,7 @@
       background: #24b47e;
       top: 2px;
       left: 2px;
-      transition-duration: 0.3s;
+      transition-duration: 0.1s;
       position: absolute;
       z-index: 1;
     }

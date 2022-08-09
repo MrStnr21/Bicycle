@@ -13,13 +13,13 @@
         <nav class="menu header__menu">
           <ul class="menu__container">
             <li class="menu__item">
-              <a href="#tracks" class="link menu__link">Покрытия и градиенты</a>
+              <a id="tracks" class="link menu__link">Покрытия и градиенты</a>
             </li>
             <li class="menu__item">
-              <a href="#bicycles" class="link menu__link">Велосипеды</a>
+              <a id="bicycles" class="link menu__link">Велосипеды</a>
             </li>
             <li class="menu__item">
-              <a href="#trainings" class="link menu__link">Тренировки</a>
+              <a id="trainings" class="link menu__link">Тренировки</a>
             </li>
           </ul>
         </nav>
@@ -139,34 +139,12 @@
               id="buttonLeft"
               type="button"
               class="buttons-swipe__button-left"
-            >
-              <img
-                src="./images/arrow-left.svg"
-                alt="тип трека"
-                class="buttons-swipe__arrow-left"
-              />
-              <img
-                src="./images/circle-arrow-left-dark.svg"
-                alt="тип трека"
-                class="buttons-swipe__arrow-left"
-              />
-            </button>
+            ></button>
             <button
               id="buttonRight"
               type="button"
               class="buttons-swipe__button-right"
-            >
-              <img
-                src="./images/arrow-right.svg"
-                alt="тип трека"
-                class="buttons-swipe__arrow-right buttons-swipe__arrow-right_hidden"
-              />
-              <img
-                src="./images/circle-arrow-right-dark.svg"
-                alt="тип трека"
-                class="buttons-swipe__arrow-right"
-              />
-            </button>
+            ></button>
           </div>
         </section>
         <section class="bicycles" id="bicycles">
@@ -175,23 +153,27 @@
             <nav class="navigation bicycles__navigation">
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <button type="button" class="navigation__button">
+                  <button
+                    type="button"
+                    id="highwayButton"
+                    class="navigation__button navigation__button_active"
+                  >
                     Шоссе
                   </button>
                 </li>
                 <li class="navigation__item">
-                  <button type="button" class="navigation__button">
+                  <button type="button" id="gravelButton" class="navigation__button">
                     Грэвел
                   </button>
                 </li>
                 <li class="navigation__item">
-                  <button type="button" class="navigation__button">TT</button>
+                  <button type="button" id="TTButton" class="navigation__button">TT</button>
                 </li>
               </ul>
             </nav>
           </div>
           <nav class="grid bicycles__grid">
-            <ul class="grid__navigation">
+            <ul id="highway-bicycles" class="grid__navigation">
               <li class="grid__item">
                 <a
                   href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN"
@@ -235,7 +217,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="grid__navigation grid__navigation_hidden">
+            <ul id="gravel-bicycles" class="grid__navigation grid__navigation_hidden">
               <li class="grid__item">
                 <a
                   href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE"
@@ -279,7 +261,7 @@
                 </a>
               </li>
             </ul>
-            <ul class="grid__navigation grid__navigation_hidden">
+            <ul id="TT-bicycles" class="grid__navigation grid__navigation_hidden">
               <li class="grid__item">
                 <a
                   href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
@@ -364,8 +346,14 @@
       <footer class="footer">
         <div class="footer__container">
           <h2 class="footer__heading">Подпишитесь на рассылку —</h2>
-          <input name="email" placeholder="Ваш e-mail?" class="footer__form" />
-          <button class="footer__submit">ok</button>
+          <div class="footer__form-container">
+            <input
+              name="email"
+              placeholder="Ваш e-mail?"
+              class="footer__form"
+            />
+            <button class="footer__submit">ok</button>
+          </div>
           <p class="footer__privacy">© Yaroslav Vice 2022</p>
         </div>
         <div class="footer__switcher">
@@ -380,5 +368,7 @@
       </footer>
     </div>
     <script src="./script/dark-theme.js"></script>
+    <script src="./script/menu-scroll.js"></script>
+    <script src="./script/bicycles-menu.js"></script>
   </body>
 </html>

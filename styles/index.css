@@ -123,9 +123,11 @@
 }
 .info__stripe {
   width: 130px;
+  background-color: #d7d4d4;
   border: 1px solid rgb(215, 212, 212);
 }
 .info__stripe_dark-theme {
+  background-color: #707070;
   border: 1px solid rgb(112, 112, 112);
 }
 
@@ -262,6 +264,9 @@
   overflow-x: scroll;
   column-gap: 40px;
 }
+.type::-webkit-scrollbar {
+  width: 0;
+}
 .type__item {
   list-style: none;
   width: 650px;
@@ -315,9 +320,9 @@
   padding: 0;
   width: 50px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../images/arrow-left.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
   background-color: #ebebeb;
   border: none;
   border-radius: 50%;
@@ -326,27 +331,19 @@
 }
 .buttons-swipe__button-left_dark-theme {
   background-color: rgb(67, 67, 67);
+  background-image: url(../images/arrow-left-dark.svg);
 }
 .buttons-swipe__button-left:hover {
   opacity: 0.6;
-}
-.buttons-swipe__arrow-left {
-  display: block;
-}
-.buttons-swipe__arrow-left_dark-theme {
-  display: block;
-}
-.buttons-swipe__arrow-left_hidden {
-  display: none;
 }
 .buttons-swipe__button-right {
   margin: 0;
   padding: 0;
   width: 50px;
   height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../images/arrow-right.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
   background-color: #ebebeb;
   border: none;
   border-radius: 50%;
@@ -354,19 +351,11 @@
   transition: 0.1s ease-out;
 }
 .buttons-swipe__button-right_dark-theme {
+  background-image: url(../images/arrow-right-dark.svg);
   background-color: rgb(67, 67, 67);
 }
 .buttons-swipe__button-right:hover {
   opacity: 0.6;
-}
-.buttons-swipe__arrow-right {
-  display: block;
-}
-.buttons-swipe__arrow-right_dark-theme {
-  display: block;
-}
-.buttons-swipe__arrow-right_hidden {
-  display: none;
 }
 
 .bicycles {
@@ -418,18 +407,10 @@
   opacity: 0.65;
 }
 .navigation__button_active {
-  color: #151515;
   opacity: 1;
 }
 .navigation__button_active:hover {
   opacity: 0.5;
-}
-.navigation__button_active_dark-theme {
-  color: #ffffff;
-  opacity: 1;
-}
-.navigation__button_active_dark-theme:hover {
-  opacity: 0.65;
 }
 
 .grid {
@@ -561,20 +542,34 @@
 .footer__heading_dark-theme {
   color: #ffffff;
 }
-.footer__form {
+.footer__form-container {
   margin: 0 0 100px 0;
-  padding: 11px 20px;
+  padding: 0;
   width: 320px;
   height: 50px;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer__form-container_dark-theme {
+  border: 1px solid rgba(125, 125, 125, 0.5);
+}
+.footer__form {
+  width: 240px;
   font-weight: 500;
   font-size: 13px;
   line-height: 28px;
   color: #222222;
   background-color: rgba(0, 0, 0, 0);
   opacity: 0.7;
-  border: 1px solid rgba(199, 199, 199, 0.5);
-  border-radius: 4px;
+  border: none;
   cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
 }
 .footer__form:hover {
   color: #151515;
@@ -582,7 +577,6 @@
 .footer__form_dark-theme {
   color: #ffffff;
   opacity: 0.7;
-  border: 1px solid rgba(125, 125, 125, 0.5);
 }
 .footer__form_dark-theme:hover {
   opacity: 1;
@@ -590,8 +584,7 @@
 .footer__submit {
   margin: 0;
   padding: 0;
-  position: absolute;
-  color: rgb(255, 255, 255);
+  color: rgb(21, 21, 21);
   background-color: rgba(0, 0, 0, 0);
   font-style: normal;
   font-weight: 500;
@@ -601,13 +594,18 @@
   width: 16px;
   height: 28px;
   border: none;
-  top: 217px;
-  left: 436px;
   cursor: pointer;
-  display: none;
+  transition: 0.1s ease-in-out;
+  visibility: hidden;
+}
+.footer__submit:hover {
+  opacity: 0.7;
+}
+.footer__submit_dark-theme {
+  color: rgb(255, 255, 255);
 }
 .footer__submit_on {
-  display: block;
+  visibility: visible;
 }
 .footer__privacy {
   font-style: normal;
@@ -658,7 +656,7 @@
   background: #24b47e;
   top: 2px;
   left: 2px;
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
   position: absolute;
   z-index: 1;
 }

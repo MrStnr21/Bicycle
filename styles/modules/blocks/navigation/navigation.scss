@@ -30,25 +30,15 @@
       color: $text-color_dark-theme;
 
       &:hover {
-        opacity: .65;
+        opacity: 0.65;
       }
     }
 
     &_active {
-      color: $heading-color;
       opacity: 1;
-      
+
       &:hover {
-        opacity: .5;
-      }
-
-      &_dark-theme {
-        color: $heading-color_dark-theme;
-        opacity: 1;
-
-        &:hover {
-          opacity: .65
-        }
+        opacity: 0.5;
       }
     }
   }
