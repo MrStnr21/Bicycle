@@ -2,44 +2,42 @@
 const buttonLeft = document.querySelector("#buttonLeft");
 const buttonRight = document.querySelector("#buttonRight");
 
-//скролл картинок
+//переменные скролла картинок
 const tracksList = document.querySelector(".track__type");
 let typeSlide = document.querySelectorAll(".type__item");
 
-//скролл описания
+//переменные скролла описания
 const tracksContainer = document.querySelector(".track__about-container");
 let aboutSlide = document.querySelectorAll(".track__about");
 
-//скролл символа
+//переменные скролла символа
 const symbolContainer = document.querySelector(".track__symbol");
 let symbolSlide = document.querySelectorAll(".symbol__vector");
 
-// функция скролла по кнопкам
-function scrollNext() {
-  //скролл картинки
+//функция скролла картинок
+function scrollIamgeNext() {
   const typeSlideWidth = typeSlide.clientWidth;
   tracksList.scrollLeft += typeSlideWidth;
   tracksList.appendChild(typeSlide[0]);
   typeSlide = document.querySelectorAll(".type__item");
-  //скролл описания
-  const aboutSlideWidth = aboutSlide.clientWidth;
-  tracksContainer.scrollLeft += aboutSlideWidth;
-  tracksContainer.appendChild(aboutSlide[0]);
-  aboutSlide = document.querySelectorAll(".track__about");
-  //скролл символа
-  const symbolSlideWidth = symbolSlide.clientWidth;
-  symbolContainer.scrollLeft += symbolSlideWidth;
-  symbolContainer.appendChild(symbolSlide[0]);
-  symbolSlide = document.querySelectorAll(".symbol__vector");
 }
 
-function scrollBack() {
-  //скролл картинки
+function scrollIamgeBack() {
   const typeSlideWidth = typeSlide.clientWidth;
   tracksList.scrollLeft -= typeSlideWidth;
   tracksList.insertBefore(typeSlide[typeSlide.length - 1], typeSlide[0]);
   typeSlide = document.querySelectorAll(".type__item");
-  //скролл описания
+}
+
+//функция скролла описания
+function scrollAboutNext() {
+  const aboutSlideWidth = aboutSlide.clientWidth;
+  tracksContainer.scrollLeft += aboutSlideWidth;
+  tracksContainer.appendChild(aboutSlide[0]);
+  aboutSlide = document.querySelectorAll(".track__about");
+}
+
+function scrollAboutBack() {
   const aboutSlideWidth = aboutSlide.clientWidth;
   tracksContainer.scrollLeft -= aboutSlideWidth;
   tracksContainer.insertBefore(
@@ -47,7 +45,17 @@ function scrollBack() {
     aboutSlide[0]
   );
   aboutSlide = document.querySelectorAll(".track__about");
-  //скролл символа
+}
+
+//функция скролла символа
+function scrollSymbolNext() {
+  const symbolSlideWidth = symbolSlide.clientWidth;
+  symbolContainer.scrollLeft += symbolSlideWidth;
+  symbolContainer.appendChild(symbolSlide[0]);
+  symbolSlide = document.querySelectorAll(".symbol__vector");
+}
+
+function scrollSymbolBack() {
   const symbolSlideWidth = symbolSlide.clientWidth;
   symbolContainer.scrollLeft -= symbolSlideWidth;
   symbolContainer.insertBefore(
@@ -55,6 +63,19 @@ function scrollBack() {
     symbolSlide[0]
   );
   symbolSlide = document.querySelectorAll(".symbol__vector");
+}
+
+// функция скролла по кнопкам
+function scrollNext() {
+  scrollIamgeNext();
+  scrollAboutNext();
+  scrollSymbolNext();
+}
+
+function scrollBack() {
+  scrollIamgeBack();
+  scrollAboutBack();
+  scrollSymbolBack();
 }
 
 //слушатели скролла

@@ -23,30 +23,42 @@ function diactiveType(element) {
   element.classList.remove("navigation__button_active");
 }
 
-//слушатели
-highwayButton.addEventListener("click", () => {
+function chooseHighway() {
   addType(highwayBicycles);
   removeType(TTBicycles);
   removeType(gravelBicycles);
   activeType(highwayButton);
   diactiveType(TTButton);
   diactiveType(gravelButton);
-});
+}
 
-gravelButton.addEventListener("click", () => {
+function chooseGravel() {
   addType(gravelBicycles);
   removeType(TTBicycles);
   removeType(highwayBicycles);
   activeType(gravelButton);
   diactiveType(TTButton);
   diactiveType(highwayButton);
-});
+}
 
-TTButton.addEventListener("click", () => {
+function chooseTT() {
   addType(TTBicycles);
   removeType(gravelBicycles);
   removeType(highwayBicycles);
   activeType(TTButton);
   diactiveType(highwayButton);
   diactiveType(gravelButton);
+}
+
+//слушатели
+highwayButton.addEventListener("click", () => {
+  chooseHighway();
+});
+
+gravelButton.addEventListener("click", () => {
+  chooseGravel();
+});
+
+TTButton.addEventListener("click", () => {
+  chooseTT();
 });
