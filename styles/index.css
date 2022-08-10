@@ -243,18 +243,28 @@
   padding: 0;
   position: relative;
 }
-.track__about_hidden {
-  display: none;
+.track__about-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow-x: scroll;
+}
+.track__about-container::-webkit-scrollbar {
+  height: 0;
+}
+.track__about {
+  margin: 0;
+  padding-right: 61.25%;
 }
 .track__heading {
   margin: 0;
   padding: 60px 0 50px 120px;
-  max-width: 460px;
+  width: 460px;
 }
 .track__text {
   margin: 0;
   padding: 0 0 80px 120px;
-  max-width: 460px;
+  width: 460px;
 }
 
 .type {
@@ -262,10 +272,9 @@
   padding: 0 0 50px 120px;
   display: flex;
   overflow-x: scroll;
-  scroll-behavior: smooth;
 }
 .type::-webkit-scrollbar {
-  width: 0;
+  height: 0;
 }
 .type__item {
   list-style: none;
@@ -288,6 +297,12 @@
   left: 120px;
   background-repeat: no-repeat;
   background-image: url(../images/track-highway-symbol.svg);
+  display: flex;
+  overflow-x: scroll;
+  align-items: flex-end;
+}
+.symbol::-webkit-scrollbar {
+  height: 0;
 }
 .symbol__container {
   margin: 0;
@@ -300,14 +315,9 @@
 }
 .symbol__vector {
   margin: 0;
-  padding: 0;
+  padding: 0 34px 12px 16px;
   width: 50px;
-  position: absolute;
-  bottom: 16px;
-  left: 12px;
-}
-.symbol__vector_hidden {
-  display: none;
+  display: flex;
 }
 
 .buttons-swipe {
@@ -571,6 +581,10 @@
   white-space: nowrap;
   overflow: hidden;
   outline: none;
+  display: block;
+}
+.footer__form_hidden {
+  display: none;
 }
 .footer__form:hover {
   color: #151515;
@@ -581,6 +595,21 @@
 }
 .footer__form_dark-theme:hover {
   opacity: 1;
+}
+.footer__messege {
+  width: 240px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 28px;
+  color: #151515;
+  display: block;
+}
+.footer__messege_hidden {
+  display: none;
+}
+.footer__messege_dark-theme {
+  color: #ffffff;
 }
 .footer__submit {
   margin: 0;

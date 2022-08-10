@@ -1,4 +1,4 @@
-//объявление переменных
+//переменные
 const highwayButton = document.querySelector("#highwayButton");
 const gravelButton = document.querySelector("#gravelButton");
 const TTButton = document.querySelector("#TTButton");

@@ -6,6 +6,13 @@
   left: 120px;
   background-repeat: no-repeat;
   background-image: url(../images/track-highway-symbol.svg);
+  display: flex;
+  overflow-x: scroll;
+  align-items: flex-end;
+
+  &::-webkit-scrollbar {
+    height: 0;
+  }
 
   &__container {
     @include marginPadding(0, 0);
@@ -17,14 +24,8 @@
   }
 
   &__vector {
-    @include marginPadding(0, 0);
+    @include marginPadding(0, 0 34px 12px 16px);
     width: 50px;
-    position: absolute;
-    bottom: 16px;
-    left: 12px;
-
-    &_hidden {
-      display: none;
-    }
+    display: flex;
   }
 }

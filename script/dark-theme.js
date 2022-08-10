@@ -1,4 +1,4 @@
-// переменные для темной темы
+//переменные для темной темы
 const darkThemeSwitcher = document.querySelector(".footer__button");
 const bodyDark = document.querySelector(".body");
 const pageDark = document.querySelector(".page");
@@ -84,6 +84,7 @@ function switchTheme() {
   switchDarkTemplate(footerLightDark, "footer__light_dark-theme");
   switchDarkTemplate(footerButtonDark, "footer__button_dark-theme");
   switchDarkTemplate(footerDarkDark, "footer__dark_dark-theme");
+  switchDarkTemplate(messege, "footer__messege_dark-theme");
 }
 
 //слушатель переключения темы

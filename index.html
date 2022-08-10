@@ -69,74 +69,34 @@
             <p class="quote__speciality">Велогонщик</p>
           </div>
         </section>
-        <section class="track" id="tracks">
-          <div id="one" class="track__about">
-            <h2 class="track__heading heading">Шоссе</h2>
-            <p class="track__text text">
-              На шоссейном велосипеде можно ездить по асфальту на разных
-              градиентах: будь то горы или равнины. Гонки проходят в командном
-              пелотоне, но тренироваться можно и самостоятельно.
-            </p>
-          </div>
-          <div id="two" class="track__about track__about_hidden">
-            <h2 class="track__heading heading">Грэвел</h2>
-            <p class="track__text text">
-              Грэвел похож на шоссейный велосипед, но конструкция рамы немного
-              отличается, и на нём стоят более широкие покрышки, всё для того
-              чтобы проехать по лёгкому бездорожью.
-            </p>
-          </div>
-          <div id="three" class="track__about track__about_hidden">
-            <h2 class="track__heading heading">ТТ</h2>
-            <p class="track__text text">
-              ТТ — это велосипед для триатлона или раздельного старта, гооняют
-              на таком велике только по равнинному асфальту, велик очень быстрые
-              и аэродинамичный.
-            </p>
+        <section class="track">
+          <div class="track__about-container">
+            <div class="track__about">
+              <h2 class="track__heading heading">Шоссе</h2>
+              <p class="track__text text">
+                На шоссейном велосипеде можно ездить по асфальту на разных
+                градиентах: будь то горы или равнины. Гонки проходят в командном
+                пелотоне, но тренироваться можно и самостоятельно.
+              </p>
+            </div>
+            <div class="track__about">
+              <h2 class="track__heading heading">Грэвел</h2>
+              <p class="track__text text">
+                Грэвел похож на шоссейный велосипед, но конструкция рамы немного
+                отличается, и на нём стоят более широкие покрышки, всё для того
+                чтобы проехать по лёгкому бездорожью.
+              </p>
+            </div>
+            <div class="track__about">
+              <h2 class="track__heading heading">ТТ</h2>
+              <p class="track__text text">
+                ТТ — это велосипед для триатлона или раздельного старта, гооняют
+                на таком велике только по равнинному асфальту, велик очень
+                быстрые и аэродинамичный.
+              </p>
+            </div>
           </div>
           <ul class="type track__type">
-            <li id="typeItem" class="type__item">
-              <img
-                src="./images/track-highway.png"
-                alt="трасса Шоссе"
-                class="type__image"
-              />
-            </li>
-            <li class="type__item">
-              <img
-                src="./images/track-gravel.png"
-                alt="трасса Грэвел"
-                class="type__image"
-              />
-            </li>
-            <li class="type__item">
-              <img
-                src="./images/track-TT.png"
-                alt="трасса ТТ"
-                class="type__image"
-              />
-            </li>
-            <li id="typeItem" class="type__item">
-              <img
-                src="./images/track-highway.png"
-                alt="трасса Шоссе"
-                class="type__image"
-              />
-            </li>
-            <li class="type__item">
-              <img
-                src="./images/track-gravel.png"
-                alt="трасса Грэвел"
-                class="type__image"
-              />
-            </li>
-            <li class="type__item">
-              <img
-                src="./images/track-TT.png"
-                alt="трасса ТТ"
-                class="type__image"
-              />
-            </li>
             <li id="typeItem" class="type__item">
               <img
                 src="./images/track-highway.png"
@@ -168,12 +128,12 @@
             <img
               src="./images/gravel-vector.svg"
               alt="тип трека"
-              class="symbol__vector symbol__vector_hidden"
+              class="symbol__vector"
             />
             <img
               src="./images/TT-vector.svg"
               alt="тип трека"
-              class="symbol__vector symbol__vector_hidden"
+              class="symbol__vector"
             />
           </div>
           <div class="buttons-swipe track__buttons-swipe">
@@ -189,7 +149,7 @@
             ></button>
           </div>
         </section>
-        <section class="bicycles" id="bicycles">
+        <section class="bicycles">
           <div class="bicycles__menu">
             <h2 class="bicycles__heading heading">Велосипеды</h2>
             <nav class="navigation bicycles__navigation">
@@ -204,12 +164,22 @@
                   </button>
                 </li>
                 <li class="navigation__item">
-                  <button type="button" id="gravelButton" class="navigation__button">
+                  <button
+                    type="button"
+                    id="gravelButton"
+                    class="navigation__button"
+                  >
                     Грэвел
                   </button>
                 </li>
                 <li class="navigation__item">
-                  <button type="button" id="TTButton" class="navigation__button">TT</button>
+                  <button
+                    type="button"
+                    id="TTButton"
+                    class="navigation__button"
+                  >
+                    TT
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -259,7 +229,10 @@
                 </a>
               </li>
             </ul>
-            <ul id="gravel-bicycles" class="grid__navigation grid__navigation_hidden">
+            <ul
+              id="gravel-bicycles"
+              class="grid__navigation grid__navigation_hidden"
+            >
               <li class="grid__item">
                 <a
                   href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE"
@@ -303,7 +276,10 @@
                 </a>
               </li>
             </ul>
-            <ul id="TT-bicycles" class="grid__navigation grid__navigation_hidden">
+            <ul
+              id="TT-bicycles"
+              class="grid__navigation grid__navigation_hidden"
+            >
               <li class="grid__item">
                 <a
                   href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9"
@@ -349,7 +325,7 @@
             </ul>
           </nav>
         </section>
-        <section class="training" id="trainings">
+        <section class="training">
           <div class="training__text">
             <h2 class="training__heading heading">Тренировки</h2>
             <p class="training__description text">
@@ -394,6 +370,7 @@
               placeholder="Ваш e-mail?"
               class="footer__form"
             />
+            <p class="footer__messege footer__messege_hidden">Круто!</p>
             <button class="footer__submit">ok</button>
           </div>
           <p class="footer__privacy">© Yaroslav Vice 2022</p>
@@ -413,5 +390,6 @@
     <script src="./script/menu-scroll.js"></script>
     <script src="./script/bicycles-menu.js"></script>
     <script src="./script/tracks-scroll.js"></script>
+    <script src="./script/email-form.js"></script>
   </body>
 </html>

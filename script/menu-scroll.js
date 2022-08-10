@@ -1,4 +1,4 @@
-// объявление переменных для скролла "подробнее"
+//переменные для скролла "подробнее"
 const sectionTrack = document.querySelector(".track");
 const sectionBicycles = document.querySelector(".bicycles");
 const sectionTrainings = document.querySelector(".training");
@@ -7,7 +7,7 @@ const buttonTracks = document.querySelector("#tracks");
 const buttonBicycles = document.querySelector("#bicycles");
 const buttonTrainings = document.querySelector("#trainings");
 
-// функция скролла
+//функция скролла
 function scrollingDetail() {
   sectionTrack.scrollIntoView({ behavior: "smooth" });
 }
@@ -24,7 +24,7 @@ function scrollingTrainings() {
   sectionTrainings.scrollIntoView({ behavior: "smooth" });
 }
 
-// слушатели
+//слушатели скролла
 buttonDetail.addEventListener("click", scrollingDetail);
 buttonTracks.addEventListener("click", scrollingTrack);
 buttonBicycles.addEventListener("click", scrollingBicycles);

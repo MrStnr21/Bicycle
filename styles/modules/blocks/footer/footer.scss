@@ -55,6 +55,11 @@
     white-space: nowrap;
     overflow: hidden;
     outline: none;
+    display: block;
+
+    &_hidden {
+      display: none;
+    }
 
     &:hover {
       color: #151515;
@@ -67,6 +72,24 @@
       &:hover {
         opacity: 1;
       }
+    }
+  }
+
+  &__messege {
+    width: 240px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    color: #151515;
+    display: block;
+
+    &_hidden {
+      display: none;
+    }
+
+    &_dark-theme {
+      color: #ffffff;
     }
   }
 
