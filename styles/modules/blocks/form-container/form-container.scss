@@ -1,0 +1,95 @@
+.form-container {
+  @include marginPadding(0 0 100px 0, 0);
+  width: 320px;
+  height: 50px;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &_dark-theme {
+    border: 1px solid rgba(125, 125, 125, 0.5);
+  }
+
+  &__form {
+    width: 240px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    color: #222222;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0.7;
+    border: none;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    outline: none;
+    display: block;
+
+    &_hidden {
+      display: none;
+    }
+
+    &:hover {
+      color: #151515;
+    }
+
+    &_dark-theme {
+      color: #ffffff;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__messege {
+    width: 240px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    color: #151515;
+    display: block;
+
+    &_hidden {
+      display: none;
+    }
+
+    &_dark-theme {
+      color: #ffffff;
+    }
+  }
+
+  &__submit {
+    @include marginPadding(0, 0);
+    color: rgba(21, 21, 21, 1);
+    background-color: rgba(0, 0, 0, 0);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    text-align: right;
+    width: 16px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    visibility: hidden;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &_dark-theme {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    &_on {
+      visibility: visible;
+    }
+  }
+}

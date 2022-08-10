@@ -1,5 +1,6 @@
 .bicycles {
   @include marginPadding(0 auto, 0);
+  max-width: 1440px;
 
   &__menu {
     @include marginPadding(0 auto, 64px 120px 120px);

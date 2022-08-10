@@ -1,5 +1,5 @@
 //переменные для темной темы
-const darkThemeSwitcher = document.querySelector(".footer__button");
+const darkThemeSwitcher = document.querySelector(".switcher__button");
 const bodyDark = document.querySelector(".body");
 const pageDark = document.querySelector(".page");
 const linkDark = document.querySelectorAll(".menu__link");
@@ -21,12 +21,12 @@ const footerHeadingDark = document.querySelector(".footer__heading");
 const foooterFormContainerDark = document.querySelector(
   ".footer__form-container"
 );
-const footerFormDark = document.querySelector(".footer__form");
-const footerSubmitDark = document.querySelector(".footer__submit");
+const footerFormDark = document.querySelector(".form-container__form");
+const footerSubmitDark = document.querySelector(".form-container__submit");
 const footerPrivacyDark = document.querySelector(".footer__privacy");
-const footerLightDark = document.querySelector(".footer__light");
-const footerButtonDark = document.querySelector(".footer__button");
-const footerDarkDark = document.querySelector(".footer__dark");
+const footerLightDark = document.querySelector(".switcher__light");
+const footerButtonDark = document.querySelector(".switcher__button");
+const footerDarkDark = document.querySelector(".switcher__dark");
 
 //функция добавления/удаления класса
 function switchDarkTemplate(element, classname) {
@@ -60,7 +60,7 @@ function switchThemeSiblings() {
 }
 
 function switchTheme() {
-  switchDarkTemplate(darkThemeSwitcher, "footer__button_on");
+  switchDarkTemplate(darkThemeSwitcher, "switcher__button_on");
   switchDarkTemplate(bodyDark, "body_dark-theme");
   switchDarkTemplate(pageDark, "page_dark-theme");
   switchDarkTemplate(infoNameDark, "info__name_dark-theme");
@@ -78,13 +78,13 @@ function switchTheme() {
     foooterFormContainerDark,
     "footer__form-container_dark-theme"
   );
-  switchDarkTemplate(footerFormDark, "footer__form_dark-theme");
-  switchDarkTemplate(footerSubmitDark, "footer__submit_dark-theme");
+  switchDarkTemplate(footerFormDark, "form-container__form_dark-theme");
+  switchDarkTemplate(footerSubmitDark, "form-container__submit_dark-theme");
   switchDarkTemplate(footerPrivacyDark, "footer__privacy_dark-theme");
-  switchDarkTemplate(footerLightDark, "footer__light_dark-theme");
-  switchDarkTemplate(footerButtonDark, "footer__button_dark-theme");
-  switchDarkTemplate(footerDarkDark, "footer__dark_dark-theme");
-  switchDarkTemplate(messege, "footer__messege_dark-theme");
+  switchDarkTemplate(footerLightDark, "switcher__light_dark-theme");
+  switchDarkTemplate(footerButtonDark, "switcher__button_dark-theme");
+  switchDarkTemplate(footerDarkDark, "switcher__dark_dark-theme");
+  switchDarkTemplate(messege, "form-container__messege_dark-theme");
 }
 
 //слушатель переключения темы

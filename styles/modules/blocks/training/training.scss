@@ -1,5 +1,6 @@
 .training {
   @include marginPadding(0 auto, 0);
+  max-width: 1440px;
   display: flex;
   column-gap: 160px;
 

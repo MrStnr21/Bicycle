@@ -35,7 +35,6 @@
 
 .page {
   min-width: 320px;
-  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -53,6 +52,8 @@
 }
 
 .header {
+  margin: 0 auto;
+  padding: 0;
   max-width: 1440px;
 }
 
@@ -191,6 +192,7 @@
 .quote {
   margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
   display: flex;
   column-gap: 80px;
 }
@@ -244,6 +246,7 @@
 .track {
   margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
   position: relative;
 }
 .track__about-container {
@@ -375,6 +378,7 @@
 .bicycles {
   margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
 }
 .bicycles__menu {
   margin: 0 auto;
@@ -418,6 +422,12 @@
   cursor: pointer;
   transition: 0.1s ease-out;
 }
+.navigation__button_active {
+  opacity: 1;
+}
+.navigation__button_active:hover {
+  opacity: 0.5;
+}
 .navigation__button:hover {
   opacity: 0.6;
 }
@@ -426,12 +436,6 @@
 }
 .navigation__button_dark-theme:hover {
   opacity: 0.65;
-}
-.navigation__button_active {
-  opacity: 1;
-}
-.navigation__button_active:hover {
-  opacity: 0.5;
 }
 
 .grid {
@@ -485,6 +489,7 @@
 .training {
   margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
   display: flex;
   column-gap: 160px;
 }
@@ -540,10 +545,17 @@
 .footer {
   margin: 0px;
   padding: 0;
+  width: 100%;
   background-color: #efefef;
 }
 .footer_dark-theme {
-  background-color: #333333;
+  background-color: #2f2f2f;
+}
+.footer__box {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+  position: relative;
 }
 .footer__container {
   margin: 0;
@@ -563,7 +575,18 @@
 .footer__heading_dark-theme {
   color: #ffffff;
 }
-.footer__form-container {
+.footer__privacy {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #cfcfcf;
+}
+.footer__privacy_dark-theme {
+  color: #565656;
+}
+
+.form-container {
   margin: 0 0 100px 0;
   padding: 0;
   width: 320px;
@@ -574,10 +597,10 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.footer__form-container_dark-theme {
+.form-container_dark-theme {
   border: 1px solid rgba(125, 125, 125, 0.5);
 }
-.footer__form {
+.form-container__form {
   width: 240px;
   font-weight: 500;
   font-size: 13px;
@@ -593,20 +616,20 @@
   outline: none;
   display: block;
 }
-.footer__form_hidden {
+.form-container__form_hidden {
   display: none;
 }
-.footer__form:hover {
+.form-container__form:hover {
   color: #151515;
 }
-.footer__form_dark-theme {
+.form-container__form_dark-theme {
   color: #ffffff;
   opacity: 0.7;
 }
-.footer__form_dark-theme:hover {
+.form-container__form_dark-theme:hover {
   opacity: 1;
 }
-.footer__messege {
+.form-container__messege {
   width: 240px;
   font-style: normal;
   font-weight: 500;
@@ -615,13 +638,13 @@
   color: #151515;
   display: block;
 }
-.footer__messege_hidden {
+.form-container__messege_hidden {
   display: none;
 }
-.footer__messege_dark-theme {
+.form-container__messege_dark-theme {
   color: #ffffff;
 }
-.footer__submit {
+.form-container__submit {
   margin: 0;
   padding: 0;
   color: rgb(21, 21, 21);
@@ -638,26 +661,17 @@
   transition: 0.1s ease-in-out;
   visibility: hidden;
 }
-.footer__submit:hover {
+.form-container__submit:hover {
   opacity: 0.7;
 }
-.footer__submit_dark-theme {
+.form-container__submit_dark-theme {
   color: rgb(255, 255, 255);
 }
-.footer__submit_on {
+.form-container__submit_on {
   visibility: visible;
 }
-.footer__privacy {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: #cfcfcf;
-}
-.footer__privacy_dark-theme {
-  color: #565656;
-}
-.footer__switcher {
+
+.switcher {
   margin: 0;
   padding: 0;
   display: flex;
@@ -667,13 +681,13 @@
   bottom: 81px;
   align-items: center;
 }
-.footer__light_dark-theme {
+.switcher__light_dark-theme {
   opacity: 0.3;
 }
-.footer__dark_dark-theme {
+.switcher__dark_dark-theme {
   opacity: 0.3;
 }
-.footer__button {
+.switcher__button {
   margin: 0;
   padding: 0;
   height: 24px;
@@ -685,10 +699,10 @@
   position: relative;
   transition-duration: 0.3s;
 }
-.footer__button_dark-theme {
+.switcher__button_dark-theme {
   background: rgb(84, 84, 84);
 }
-.footer__button::after {
+.switcher__button::after {
   content: "";
   height: 20px;
   width: 20px;
@@ -700,6 +714,6 @@
   position: absolute;
   z-index: 1;
 }
-.footer__button_on::after {
+.switcher__button_on::after {
   left: 22px;
 }/*# sourceMappingURL=index.css.map */
