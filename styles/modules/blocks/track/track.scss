@@ -18,12 +18,12 @@
   }
 
   &__heading {
-    @include marginPadding(0, 60px 0 50px 120px);
+    @include marginPadding(0, 64px 0 44px 120px);
     width: 460px;
   }
 
   &__text {
-    @include marginPadding(0, 0 0 80px 120px);
+    @include marginPadding(0, 0 0 83px 120px);
     width: 460px;
   }
 }

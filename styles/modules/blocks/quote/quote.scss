@@ -10,13 +10,12 @@
 
   &__text {
     @include marginPadding(0, 120px 120px 60px 0);
-    padding: 120px 120px 60px 0;
     max-width: 470px;
   }
 
   &__heading {
     @include marginPadding(0, 0);
-    min-height: 394px;
+    min-height: 392px;
     font-weight: 600;
     font-size: 34px;
     line-height: 44px;

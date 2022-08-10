@@ -1,11 +1,13 @@
 .button {
   position: relative;
-  @include marginPadding(0 0 167px 0, 16px 10px);
+  @include marginPadding(0 0 169px 0, 16px 10px);
   width: 180px;
   color: white;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;

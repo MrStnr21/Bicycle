@@ -1,9 +1,9 @@
 .info {
-  @include marginPadding(0, 80px 250px 209px 120px);
+  @include marginPadding(0, 84px 250px 205px 120px);
   max-width: 460px;
 
   &__heading {
-    @include marginPadding(0, 0 0 50px 0);
+    @include marginPadding(0, 0 0 45px 0);
   }
 
   &__name-container {

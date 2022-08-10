@@ -2,7 +2,7 @@
   @include marginPadding(0 auto, 0);
 
   &__menu {
-    @include marginPadding(0 auto, 60px 120px 120px);
+    @include marginPadding(0 auto, 64px 120px 120px);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

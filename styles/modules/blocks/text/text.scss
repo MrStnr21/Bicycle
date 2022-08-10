@@ -1,8 +1,9 @@
 .text {
-    @include text;
-    color: $text-color;
+  @include marginPadding(0, 0 0 53px 0);
+  @include text;
+  color: $text-color;
 
-    &_dark-theme {
-        color: $text-color_dark-theme;
-    }
+  &_dark-theme {
+    color: $text-color_dark-theme;
+  }
 }

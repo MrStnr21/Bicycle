@@ -1,6 +1,6 @@
 .footer {
-  @include marginPadding(0px, 0 auto);
-  background-color: $background-color;
+  @include marginPadding(0px, 0);
+  background-color: #efefef;
 
   &_dark-theme {
     background-color: $background-color_dark-theme;
@@ -140,7 +140,7 @@
     column-gap: 22px;
     position: absolute;
     right: 123px;
-    bottom: 70px;
+    bottom: 81px;
     align-items: center;
   }
 

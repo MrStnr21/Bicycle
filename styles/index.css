@@ -11,6 +11,8 @@
 }
 
 .text {
+  margin: 0;
+  padding: 0 0 53px 0;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -64,7 +66,7 @@
 }
 .menu__item {
   margin: 0;
-  padding: 28px 0;
+  padding: 26px 0;
 }
 .menu__link {
   color: #151515;
@@ -93,18 +95,18 @@
 .about__image {
   width: 610px;
   height: 836px;
-  margin-top: 20px;
+  margin-top: 21px;
   border: 0;
 }
 
 .info {
   margin: 0;
-  padding: 80px 250px 209px 120px;
+  padding: 84px 250px 205px 120px;
   max-width: 460px;
 }
 .info__heading {
   margin: 0;
-  padding: 0 0 50px 0;
+  padding: 0 0 45px 0;
 }
 .info__name-container {
   display: flex;
@@ -133,13 +135,15 @@
 
 .button {
   position: relative;
-  margin: 0 0 167px 0;
+  margin: 0 0 169px 0;
   padding: 16px 10px;
   width: 180px;
   color: white;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
@@ -198,13 +202,12 @@
 .quote__text {
   margin: 0;
   padding: 120px 120px 60px 0;
-  padding: 120px 120px 60px 0;
   max-width: 470px;
 }
 .quote__heading {
   margin: 0;
   padding: 0;
-  min-height: 394px;
+  min-height: 392px;
   font-weight: 600;
   font-size: 34px;
   line-height: 44px;
@@ -258,12 +261,12 @@
 }
 .track__heading {
   margin: 0;
-  padding: 60px 0 50px 120px;
+  padding: 64px 0 44px 120px;
   width: 460px;
 }
 .track__text {
   margin: 0;
-  padding: 0 0 80px 120px;
+  padding: 0 0 83px 120px;
   width: 460px;
 }
 
@@ -322,7 +325,7 @@
 
 .buttons-swipe {
   margin: 0;
-  padding: 0 0 60px 120px;
+  padding: 0 0 59px 120px;
   display: flex;
   column-gap: 20px;
 }
@@ -375,7 +378,7 @@
 }
 .bicycles__menu {
   margin: 0 auto;
-  padding: 60px 120px 120px;
+  padding: 64px 120px 120px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -385,11 +388,16 @@
   padding: 0;
 }
 
+.navigation {
+  padding: 1px;
+  margin: 1px;
+}
 .navigation__list {
   margin: 0;
   padding: 0;
+  min-height: 32px;
   display: flex;
-  column-gap: 40px;
+  column-gap: 44px;
 }
 .navigation__item {
   margin: 0;
@@ -397,6 +405,8 @@
   list-style: none;
 }
 .navigation__button {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -463,7 +473,7 @@
 }
 .grid__name {
   margin: 0;
-  padding: 22px 0 0 6px;
+  padding: 15px 0 0 6px;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
@@ -480,7 +490,7 @@
 }
 .training__heading {
   margin: 0;
-  padding: 150px 0 50px 120px;
+  padding: 153px 0 45px 120px;
   max-width: 460px;
 }
 .training__description {
@@ -529,8 +539,8 @@
 
 .footer {
   margin: 0px;
-  padding: 0 auto;
-  background-color: #f4f4f4;
+  padding: 0;
+  background-color: #efefef;
 }
 .footer_dark-theme {
   background-color: #333333;
@@ -654,7 +664,7 @@
   column-gap: 22px;
   position: absolute;
   right: 123px;
-  bottom: 70px;
+  bottom: 81px;
   align-items: center;
 }
 .footer__light_dark-theme {

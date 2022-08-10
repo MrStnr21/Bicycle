@@ -1,8 +1,12 @@
 .navigation {
+  padding: 1px;
+  margin: 1px;
+
   &__list {
     @include marginPadding(0, 0);
+    min-height: 32px;
     display: flex;
-    column-gap: 40px;
+    column-gap: 44px;
   }
 
   &__item {
@@ -11,6 +15,7 @@
   }
 
   &__button {
+    @include marginPadding(0, 0);
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
