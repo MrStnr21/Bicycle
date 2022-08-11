@@ -1,0 +1,63 @@
+.popup-menu {
+  @include marginPadding(0, 0);
+  position: fixed;
+  height: 566px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 3;
+
+  &__container {
+    position: relative;
+  }
+
+  &__button-close {
+    @include marginPadding(0, 0);
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 28px;
+    right: 18px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__image {
+    width: 22px;
+  }
+
+  &__container {
+    @include marginPadding(0 auto, 70px 0 0 0);
+    max-width: 210px;
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    @include marginPadding(0, 0 0 32px 0);
+  }
+
+  &__link {
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__switcher {
+    @include marginPadding(0, 284px 0 0 0);
+    margin: 0 auto;
+    display: flex;
+    column-gap: 22px;
+    position: static;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,6 +1,8 @@
 @import "./modules/variable.scss";
 @import "./modules/mixins.scss";
 
+@import "./modules/blocks/switcher/switcher.scss";
+
 @import "./modules/blocks/heading/heading.scss";
 @import "./modules/blocks/text/text.scss";
 
@@ -8,6 +10,7 @@
 @import "./modules/blocks/page/page.scss";
 @import "./modules/blocks/header/header.scss";
 @import "./modules/blocks/menu/menu.scss";
+@import "./modules/blocks/popup-menu/popup-menu.scss";
 
 @import "./modules/blocks/about/about.scss";
 @import "./modules/blocks/info/info.scss";
@@ -29,4 +32,3 @@
 
 @import "./modules/blocks/footer/footer.scss";
 @import "./modules/blocks/form-container/form-container.scss";
-@import "./modules/blocks/switcher/switcher.scss";

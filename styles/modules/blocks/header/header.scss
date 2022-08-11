@@ -1,4 +1,39 @@
 .header {
   @include marginPadding(0 auto, 0);
   max-width: 1440px;
+  min-width: 320px;
+
+  &__button {
+    @include marginPadding(0, 0);
+    border: none;
+    position: absolute;
+    top: 28px;
+    right: 18px;
+    display: none;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__image {
+    padding: 5px 0;
+    width: 22px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    &__button {
+      display: block;
+
+      &_hidden {
+        display: none;
+      }
+    }
+  }
 }

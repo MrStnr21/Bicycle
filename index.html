@@ -23,8 +23,49 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="header__button header__button_hidden">
+          <img class="header__image" src="./images/header__menu.svg" />
+        </button>
+        <section class="popup-menu header__popup-menu">
+          <button class="popup-menu__button-close">
+            <img
+              class="popup-menu__image"
+              src="./images/cross-close-svgrepo-com.svg"
+            />
+          </button>
+          <nav class="popup-menu__menu">
+            <div class="popup-menu__container">
+            <ul class="popup-menu__container">
+              <li class="popup-menu__item">
+                <a id="tracks" class="link popup-menu__link"
+                  >Покрытия и градиенты</a
+                >
+              </li>
+              <li class="popup-menu__item">
+                <a id="bicycles" class="link popup-menu__link">Велосипеды</a>
+              </li>
+              <li class="popup-menu__item">
+                <a id="trainings" class="link popup-menu__link">Тренировки</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="switcher popup-menu__switcher">
+            <img
+              src="./images/light_sun.svg"
+              alt="солнце"
+              class="switcher__light"
+            />
+            <div class="switcher__button"></div>
+            <img
+              src="./images/light_moon.svg"
+              alt="луна"
+              class="switcher__dark"
+            />
+          </div>
+        </div>
+        </section>
       </header>
-      <main class="content">
+      <!-- <main class="content">
         <section class="about">
           <div class="info">
             <h1 class="info__heading heading">Шоссе, ТТ и&nbsp;Грэвел</h1>
@@ -360,7 +401,7 @@
             class="training__image"
           />
         </section>
-      </main>
+      </main> 
       <footer class="footer">
         <div class="footer__box">
           <div class="footer__container">
@@ -392,7 +433,7 @@
             />
           </div>
         </div>
-      </footer>
+      </footer> -->
     </div>
     <script src="./script/dark-theme.js"></script>
     <script src="./script/menu-scroll.js"></script>
