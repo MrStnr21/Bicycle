@@ -53,3 +53,37 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .quote {
+    flex-direction: column;
+
+    &__image {
+      @include marginPadding(0 auto, 60px 0 40px);
+      width: 284px;
+      height: 204px;
+    }
+
+    &__text {
+      @include marginPadding(0 auto, 0);
+    }
+
+    &__heading {
+      font-style: normal;
+      font-size: 23px;
+      line-height: 29px;
+      max-width: 284px;
+      min-height: 127px;
+    }
+
+    &__name {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &__speciality {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+}

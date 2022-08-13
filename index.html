@@ -26,26 +26,23 @@
         <button type="button" class="header__button header__button_hidden">
           <img class="header__image" src="./images/header__menu.svg" />
         </button>
-        <section class="popup-menu header__popup-menu">
+        <section class="popup-menu header__popup-menu popup-menu_hidden">
           <button class="popup-menu__button-close">
             <img
               class="popup-menu__image"
               src="./images/cross-close-svgrepo-com.svg"
             />
           </button>
-          <nav class="popup-menu__menu">
-            <div class="popup-menu__container">
-            <ul class="popup-menu__container">
-              <li class="popup-menu__item">
-                <a id="tracks" class="link popup-menu__link"
-                  >Покрытия и градиенты</a
-                >
+          <nav class="menu popup-menu__menu">
+            <ul class="menu__container">
+              <li class="menu__item">
+                <a id="tracks" class="link menu__link">Покрытия и градиенты</a>
               </li>
-              <li class="popup-menu__item">
-                <a id="bicycles" class="link popup-menu__link">Велосипеды</a>
+              <li class="menu__item">
+                <a id="bicycles" class="link menu__link">Велосипеды</a>
               </li>
-              <li class="popup-menu__item">
-                <a id="trainings" class="link popup-menu__link">Тренировки</a>
+              <li class="menu__item">
+                <a id="trainings" class="link menu__link">Тренировки</a>
               </li>
             </ul>
           </nav>
@@ -62,13 +59,24 @@
               class="switcher__dark"
             />
           </div>
-        </div>
         </section>
       </header>
-      <!-- <main class="content">
+      <main class="content">
         <section class="about">
           <div class="info">
             <h1 class="info__heading heading">Шоссе, ТТ и&nbsp;Грэвел</h1>
+            <img
+              class="info__image about__image"
+              src="./images/about-forest.png"
+              alt="трасса в лесу"
+            />
+            <div class="popup info__popup">
+              <img
+                class="popup__image"
+                src="./images/about_bicycle.png"
+                alt="велосипед"
+              />
+            </div>
             <p class="info__text text">
               Триатлонные старты, горные серпантины или грейвел заезды
               по&nbsp;живописным маршрутам — нужно только определиться
@@ -190,7 +198,7 @@
             ></button>
           </div>
         </section>
-        <section class="bicycles">
+        <!--    <section class="bicycles">
           <div class="bicycles__menu">
             <h2 class="bicycles__heading heading">Велосипеды</h2>
             <nav class="navigation bicycles__navigation">
@@ -400,9 +408,9 @@
             alt="тренировки/трек"
             class="training__image"
           />
-        </section>
-      </main> 
-      <footer class="footer">
+        </section>-->
+      </main>
+      <!-- <footer class="footer">
         <div class="footer__box">
           <div class="footer__container">
             <h2 class="footer__heading">Подпишитесь на рассылку —</h2>

@@ -33,7 +33,19 @@
 @media screen and (max-width: 360px) {
   .menu {
     &__container {
-      display: none;
+      @include marginPadding(0, 144px 0 0 0);
+      flex-direction: column;
+      align-items: center;
+      row-gap: 32px;
+    }
+
+    &__item {
+      @include marginPadding(0, 0);
+    }
+
+    &__link {
+      font-style: normal;
+      font-size: 18px;
     }
   }
 }

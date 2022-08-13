@@ -15,3 +15,17 @@
     background-color: #f4f4f4;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .popup {
+    top: 385px;
+    right: 68px;
+    height: 1px;
+
+    &__image {
+      @include marginPadding(0, 10.67px 26.59px);
+      width: 180.82px;
+      height: 138.67px;
+    }
+  }
+}

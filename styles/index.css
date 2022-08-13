@@ -57,6 +57,15 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 360px) {
+  .heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+  }
+}
 .text {
   margin: 0;
   padding: 0 0 53px 0;
@@ -71,6 +80,15 @@
   color: #e6e6e6;
 }
 
+@media screen and (max-width: 360px) {
+  .text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    opacity: 0.7;
+  }
+}
 .body {
   margin: 0;
   padding: 0;
@@ -114,6 +132,7 @@
   display: none;
   transition: 0.1s ease-in-out;
   cursor: pointer;
+  z-index: 2;
 }
 .header__button:hover {
   opacity: 0.7;
@@ -126,11 +145,11 @@
 }
 
 @media screen and (max-width: 360px) {
+  .header__menu {
+    display: none;
+  }
   .header__button {
     display: block;
-  }
-  .header__button_hidden {
-    display: none;
   }
 }
 .menu__container {
@@ -163,7 +182,19 @@
 
 @media screen and (max-width: 360px) {
   .menu__container {
-    display: none;
+    margin: 0;
+    padding: 144px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+  }
+  .menu__item {
+    margin: 0;
+    padding: 0;
+  }
+  .menu__link {
+    font-style: normal;
+    font-size: 18px;
   }
 }
 .popup-menu {
@@ -186,8 +217,8 @@
   border: 0;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
-  top: 28px;
-  right: 18px;
+  top: 25px;
+  right: 19px;
   transition: 0.1s ease-in-out;
   cursor: pointer;
 }
@@ -195,7 +226,7 @@
   opacity: 0.7;
 }
 .popup-menu__image {
-  width: 22px;
+  width: 18px;
 }
 .popup-menu__container {
   margin: 0 auto;
@@ -217,13 +248,16 @@
 }
 .popup-menu__switcher {
   margin: 0;
-  padding: 284px 0 0 0;
+  padding: 309px 0 0 0;
   margin: 0 auto;
   display: flex;
   column-gap: 22px;
   position: static;
   align-items: center;
   justify-content: center;
+}
+.popup-menu_hidden {
+  display: none;
 }
 
 .about {
@@ -238,9 +272,17 @@
   width: 610px;
   height: 836px;
   margin-top: 21px;
-  border: 0;
 }
 
+@media screen and (max-width: 360px) {
+  .about {
+    min-height: 746px;
+    flex-direction: column;
+  }
+  .about__image {
+    display: none;
+  }
+}
 .info {
   margin: 0;
   padding: 84px 250px 205px 120px;
@@ -274,7 +316,48 @@
   background-color: #707070;
   border: 1px solid rgb(112, 112, 112);
 }
+.info__image {
+  display: none;
+}
+.info__popup {
+  display: none;
+}
 
+@media screen and (max-width: 360px) {
+  .info {
+    margin: 74px auto 0;
+    padding: 0;
+  }
+  .info__heading {
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 284px;
+    min-height: 80px;
+  }
+  .info__text {
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 284px;
+    min-height: 80px;
+  }
+  .info__name {
+    display: none;
+  }
+  .info__stripe {
+    display: none;
+  }
+  .info__image {
+    margin: 0 18px 0 48px;
+    padding: 0;
+    width: 254px;
+    height: 348px;
+    display: block;
+    position: relative;
+  }
+  .info__popup {
+    display: block;
+  }
+}
 .button {
   position: relative;
   margin: 0 0 169px 0;
@@ -312,6 +395,17 @@
   transform: translateX(0);
 }
 
+@media screen and (max-width: 360px) {
+  .button {
+    margin: 0 auto;
+    padding: 16px 10px;
+    font-size: 13px;
+    line-height: 19px;
+    width: 284px;
+    display: flex;
+    justify-content: center;
+  }
+}
 .popup {
   position: absolute;
   top: 347px;
@@ -330,6 +424,19 @@
   background-color: #f4f4f4;
 }
 
+@media screen and (max-width: 360px) {
+  .popup {
+    top: 385px;
+    right: 68px;
+    height: 1px;
+  }
+  .popup__image {
+    margin: 0;
+    padding: 10.67px 26.59px;
+    width: 180.82px;
+    height: 138.67px;
+  }
+}
 .quote {
   margin: 0 auto;
   padding: 0;
@@ -384,6 +491,36 @@
   color: #e6e6e6;
 }
 
+@media screen and (max-width: 360px) {
+  .quote {
+    flex-direction: column;
+  }
+  .quote__image {
+    margin: 0 auto;
+    padding: 60px 0 40px;
+    width: 284px;
+    height: 204px;
+  }
+  .quote__text {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .quote__heading {
+    font-style: normal;
+    font-size: 23px;
+    line-height: 29px;
+    max-width: 284px;
+    min-height: 127px;
+  }
+  .quote__name {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .quote__speciality {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
 .track {
   margin: 0 auto;
   padding: 0;

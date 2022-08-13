@@ -38,3 +38,14 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .button {
+    @include marginPadding(0 auto, 16px 10px);
+    font-size: 13px;
+    line-height: 19px;
+    width: 284px;
+    display: flex;
+    justify-content: center;
+  }
+}

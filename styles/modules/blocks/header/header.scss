@@ -12,6 +12,7 @@
     display: none;
     transition: 0.1s ease-in-out;
     cursor: pointer;
+    z-index: 2;
 
     &:hover {
       opacity: 0.7;
@@ -28,12 +29,12 @@
 
 @media screen and (max-width: 360px) {
   .header {
+    &__menu {
+      display: none;
+    }
+
     &__button {
       display: block;
-
-      &_hidden {
-        display: none;
-      }
     }
   }
 }
