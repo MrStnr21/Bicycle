@@ -10,7 +10,6 @@
   &__item {
     list-style: none;
     width: 650px;
-    height: 400px;
     padding-right: 40px;
   }
 
@@ -18,5 +17,21 @@
     @include marginPadding(0, 0);
     width: 650px;
     height: 400px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .type {
+    @include marginPadding(0, 0 0 40px 0);
+
+    &__image {
+      width: 284px;
+      height: 175px;
+    }
+
+    &__item {
+      width: 284px;
+      padding-right: 40px;
+    }
   }
 }

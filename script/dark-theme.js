@@ -1,5 +1,6 @@
 //переменные для темной темы
-const darkThemeSwitcher = document.querySelector(".switcher__button");
+const darkThemeSwitcher = document.querySelector("#switcher-desktop");
+const darkThemeSwitcherMob = document.querySelector("#switcher-mobile");
 const bodyDark = document.querySelector(".body");
 const pageDark = document.querySelector(".page");
 const linkDark = document.querySelectorAll(".menu__link");
@@ -86,9 +87,14 @@ function switchTheme() {
   switchDarkTemplate(footerDarkDark, "switcher__dark_dark-theme");
   switchDarkTemplate(messege, "form-container__messege_dark-theme");
 }
-
+console.log(darkThemeSwitcher);
 //слушатель переключения темы
 darkThemeSwitcher.addEventListener("click", () => {
+  switchTheme();
+  switchThemeSiblings();
+});
+
+darkThemeSwitcherMob.addEventListener("click", () => {
   switchTheme();
   switchThemeSiblings();
 });

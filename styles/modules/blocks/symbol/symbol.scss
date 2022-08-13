@@ -29,3 +29,17 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .symbol {
+    width: 70px;
+    height: 28px;
+    top: 253px;
+    left: 0;
+    background-size: 70px;
+
+    &__vector {
+      width: 35px;
+    }
+  }
+}

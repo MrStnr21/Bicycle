@@ -2,9 +2,11 @@
   @include marginPadding(0 auto, 0);
   max-width: 1440px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 
-  &__about-container {
-    @include marginPadding(0, 0);
+  &__heading-container {
+    @include marginPadding(0, 60px 0 50px 120px);
     display: flex;
     overflow-x: scroll;
 
@@ -13,18 +15,47 @@
     }
   }
 
-  &__about {
-    margin: 0;
-    padding-right: 61.25%;
+  &__heading {
+    @include marginPadding(0, 0 857px 0 0);
+    min-width: 460px;
   }
 
-  &__heading {
-    @include marginPadding(0, 64px 0 44px 120px);
-    width: 460px;
+  &__text-container {
+    @include marginPadding(0, 0 0 80px 120px);
+    display: flex;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
   }
 
   &__text {
-    @include marginPadding(0, 0 0 83px 120px);
-    width: 460px;
+    @include marginPadding(0, 0 859px 0 0);
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .track {
+    max-width: 284px;
+    display: flex;
+    position: relative;
+
+    &__heading-container {
+      @include marginPadding(0, 40px 0);
+      min-width: 108px;
+      order: 0;
+    }
+
+    &__text-container {
+      @include marginPadding(0, 0);
+      order: 1;
+    }
+
+    &__text {
+      @include marginPadding(0, 0 859px 0 0);
+      min-width: 284px;
+    }
   }
 }

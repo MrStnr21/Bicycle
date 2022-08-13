@@ -46,6 +46,8 @@
 }
 
 .heading {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 55px;
@@ -200,6 +202,7 @@
 .popup-menu {
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
   position: fixed;
   height: 566px;
   top: 0;
@@ -276,7 +279,6 @@
 
 @media screen and (max-width: 360px) {
   .about {
-    min-height: 746px;
     flex-direction: column;
   }
   .about__image {
@@ -526,31 +528,61 @@
   padding: 0;
   max-width: 1440px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.track__about-container {
+.track__heading-container {
   margin: 0;
-  padding: 0;
+  padding: 60px 0 50px 120px;
   display: flex;
   overflow-x: scroll;
 }
-.track__about-container::-webkit-scrollbar {
+.track__heading-container::-webkit-scrollbar {
   height: 0;
-}
-.track__about {
-  margin: 0;
-  padding-right: 61.25%;
 }
 .track__heading {
   margin: 0;
-  padding: 64px 0 44px 120px;
-  width: 460px;
+  padding: 0 857px 0 0;
+  min-width: 460px;
+}
+.track__text-container {
+  margin: 0;
+  padding: 0 0 80px 120px;
+  display: flex;
+  overflow-x: scroll;
+}
+.track__text-container::-webkit-scrollbar {
+  height: 0;
 }
 .track__text {
   margin: 0;
-  padding: 0 0 83px 120px;
-  width: 460px;
+  padding: 0 859px 0 0;
+  max-width: 460px;
 }
 
+@media screen and (max-width: 360px) {
+  .track {
+    max-width: 284px;
+    display: flex;
+    position: relative;
+  }
+  .track__heading-container {
+    margin: 0;
+    padding: 40px 0;
+    min-width: 108px;
+    order: 0;
+  }
+  .track__text-container {
+    margin: 0;
+    padding: 0;
+    order: 1;
+  }
+  .track__text {
+    margin: 0;
+    padding: 0 859px 0 0;
+    min-width: 284px;
+  }
+}
 .type {
   margin: 0;
   padding: 0 0 50px 120px;
@@ -563,7 +595,6 @@
 .type__item {
   list-style: none;
   width: 650px;
-  height: 400px;
   padding-right: 40px;
 }
 .type__image {
@@ -573,6 +604,20 @@
   height: 400px;
 }
 
+@media screen and (max-width: 360px) {
+  .type {
+    margin: 0;
+    padding: 0 0 40px 0;
+  }
+  .type__image {
+    width: 284px;
+    height: 175px;
+  }
+  .type__item {
+    width: 284px;
+    padding-right: 40px;
+  }
+}
 .symbol {
   position: absolute;
   width: 100px;
@@ -604,6 +649,18 @@
   display: flex;
 }
 
+@media screen and (max-width: 360px) {
+  .symbol {
+    width: 70px;
+    height: 28px;
+    top: 253px;
+    left: 0;
+    background-size: 70px;
+  }
+  .symbol__vector {
+    width: 35px;
+  }
+}
 .buttons-swipe {
   margin: 0;
   padding: 0 0 59px 120px;
@@ -653,6 +710,29 @@
   opacity: 0.6;
 }
 
+@media screen and (max-width: 360px) {
+  .buttons-swipe {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 45px;
+    right: 0;
+  }
+  .buttons-swipe__button-left {
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-size: 7px;
+  }
+  .buttons-swipe__button-right {
+    margin: 0;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-size: 7px;
+  }
+}
 .bicycles {
   margin: 0 auto;
   padding: 0;

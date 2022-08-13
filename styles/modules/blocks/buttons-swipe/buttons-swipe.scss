@@ -49,3 +49,26 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .buttons-swipe {
+    @include marginPadding(0, 0);
+    position: absolute;
+    top: 45px;
+    right: 0;
+
+    &__button-left {
+      @include marginPadding(0, 0);
+      width: 24px;
+      height: 24px;
+      background-size: 7px;
+    }
+
+    &__button-right {
+      @include marginPadding(0, 0);
+      width: 24px;
+      height: 24px;
+      background-size: 7px;
+    }
+  }
+}

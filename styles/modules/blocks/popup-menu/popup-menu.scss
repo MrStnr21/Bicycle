@@ -1,5 +1,6 @@
 .popup-menu {
   @include marginPadding(0, 0);
+  background-color: #f4f4f4;
   position: fixed;
   height: 566px;
   top: 0;

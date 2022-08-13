@@ -1,4 +1,5 @@
 .heading {
+  @include marginPadding(0, 0);
   @include heading;
   color: $heading-color;
 

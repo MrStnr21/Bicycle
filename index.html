@@ -24,25 +24,30 @@
           </ul>
         </nav>
         <button type="button" class="header__button header__button_hidden">
-          <img class="header__image" src="./images/header__menu.svg" />
+          <img
+            class="header__image"
+            src="./images/header__menu.svg"
+            alt="меню"
+          />
         </button>
         <section class="popup-menu header__popup-menu popup-menu_hidden">
-          <button class="popup-menu__button-close">
+          <button type="button" class="popup-menu__button-close">
             <img
               class="popup-menu__image"
               src="./images/cross-close-svgrepo-com.svg"
+              alt="закрыть"
             />
           </button>
           <nav class="menu popup-menu__menu">
             <ul class="menu__container">
               <li class="menu__item">
-                <a id="tracks" class="link menu__link">Покрытия и градиенты</a>
+                <a class="link menu__link">Покрытия и градиенты</a>
               </li>
               <li class="menu__item">
-                <a id="bicycles" class="link menu__link">Велосипеды</a>
+                <a class="link menu__link">Велосипеды</a>
               </li>
               <li class="menu__item">
-                <a id="trainings" class="link menu__link">Тренировки</a>
+                <a class="link menu__link">Тренировки</a>
               </li>
             </ul>
           </nav>
@@ -52,7 +57,7 @@
               alt="солнце"
               class="switcher__light"
             />
-            <div class="switcher__button"></div>
+            <div id="switcher-mobile" class="switcher__button"></div>
             <img
               src="./images/light_moon.svg"
               alt="луна"
@@ -119,31 +124,27 @@
           </div>
         </section>
         <section class="track">
-          <div class="track__about-container">
-            <div class="track__about">
-              <h2 class="track__heading heading">Шоссе</h2>
-              <p class="track__text text">
-                На шоссейном велосипеде можно ездить по асфальту на разных
-                градиентах: будь то горы или равнины. Гонки проходят в командном
-                пелотоне, но тренироваться можно и самостоятельно.
-              </p>
-            </div>
-            <div class="track__about">
-              <h2 class="track__heading heading">Грэвел</h2>
-              <p class="track__text text">
-                Грэвел похож на шоссейный велосипед, но конструкция рамы немного
-                отличается, и на нём стоят более широкие покрышки, всё для того
-                чтобы проехать по лёгкому бездорожью.
-              </p>
-            </div>
-            <div class="track__about">
-              <h2 class="track__heading heading">ТТ</h2>
-              <p class="track__text text">
-                ТТ — это велосипед для триатлона или раздельного старта, гооняют
-                на таком велике только по равнинному асфальту, велик очень
-                быстрые и аэродинамичный.
-              </p>
-            </div>
+          <div class="track__heading-container">
+            <h2 class="track__heading heading">Шоссе</h2>
+            <h2 class="track__heading heading">Грэвел</h2>
+            <h2 class="track__heading heading">ТТ</h2>
+          </div>
+          <div class="track__text-container">
+            <p class="track__text text">
+              На шоссейном велосипеде можно ездить по асфальту на разных
+              градиентах: будь то горы или равнины. Гонки проходят в командном
+              пелотоне, но тренироваться можно и самостоятельно.
+            </p>
+            <p class="track__text text">
+              Грэвел похож на шоссейный велосипед, но конструкция рамы немного
+              отличается, и на нём стоят более широкие покрышки, всё для того
+              чтобы проехать по лёгкому бездорожью.
+            </p>
+            <p class="track__text text">
+              ТТ — это велосипед для триатлона или раздельного старта, гооняют
+              на таком велике только по равнинному асфальту, велик очень быстрые
+              и аэродинамичный.
+            </p>
           </div>
           <ul class="type track__type">
             <li id="typeItem" class="type__item">
@@ -198,7 +199,7 @@
             ></button>
           </div>
         </section>
-        <!--    <section class="bicycles">
+        <section class="bicycles">
           <div class="bicycles__menu">
             <h2 class="bicycles__heading heading">Велосипеды</h2>
             <nav class="navigation bicycles__navigation">
@@ -408,9 +409,9 @@
             alt="тренировки/трек"
             class="training__image"
           />
-        </section>-->
+        </section>
       </main>
-      <!-- <footer class="footer">
+      <footer class="footer">
         <div class="footer__box">
           <div class="footer__container">
             <h2 class="footer__heading">Подпишитесь на рассылку —</h2>
@@ -433,7 +434,7 @@
               alt="солнце"
               class="switcher__light"
             />
-            <div class="switcher__button"></div>
+            <div id="switcher-desktop" class="switcher__button"></div>
             <img
               src="./images/light_moon.svg"
               alt="луна"
@@ -441,12 +442,13 @@
             />
           </div>
         </div>
-      </footer> -->
+      </footer>
     </div>
     <script src="./script/dark-theme.js"></script>
     <script src="./script/menu-scroll.js"></script>
     <script src="./script/bicycles-menu.js"></script>
     <script src="./script/tracks-scroll.js"></script>
     <script src="./script/email-form.js"></script>
+    <script src="./script/header-menu.js"></script>
   </body>
 </html>
