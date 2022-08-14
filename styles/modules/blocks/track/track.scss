@@ -32,18 +32,21 @@
 
   &__text {
     @include marginPadding(0, 0 859px 0 0);
-    max-width: 460px;
+    min-width: 460px;
   }
 }
 
 @media screen and (max-width: 360px) {
   .track {
+    @include marginPadding(0 auto, 0 0 80px);
     max-width: 284px;
     display: flex;
     position: relative;
+    border-bottom: 1px solid #e3e3e3;
+    row-gap: 40px;
 
     &__heading-container {
-      @include marginPadding(0, 40px 0);
+      @include marginPadding(0, 40px 0 0 0);
       min-width: 108px;
       order: 0;
     }

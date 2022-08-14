@@ -129,7 +129,7 @@
   padding: 0;
   border: none;
   position: absolute;
-  top: 28px;
+  top: 26px;
   right: 18px;
   display: none;
   transition: 0.1s ease-in-out;
@@ -204,12 +204,11 @@
   padding: 0;
   background-color: #f4f4f4;
   position: fixed;
-  height: 566px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 3;
+  z-index: 3;
 }
 .popup-menu__container {
   position: relative;
@@ -338,7 +337,7 @@
   }
   .info__text {
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 0 33px;
     max-width: 284px;
     min-height: 80px;
   }
@@ -400,7 +399,7 @@
 @media screen and (max-width: 360px) {
   .button {
     margin: 0 auto;
-    padding: 16px 10px;
+    padding: 13px 10px;
     font-size: 13px;
     line-height: 19px;
     width: 284px;
@@ -428,9 +427,9 @@
 
 @media screen and (max-width: 360px) {
   .popup {
-    top: 385px;
+    top: 355px;
     right: 68px;
-    height: 1px;
+    height: 200px;
   }
   .popup__image {
     margin: 0;
@@ -495,11 +494,16 @@
 
 @media screen and (max-width: 360px) {
   .quote {
+    margin: 0 auto;
+    padding: 0 0 80px 0;
+    max-width: 284px;
     flex-direction: column;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
   }
   .quote__image {
     margin: 0 auto;
-    padding: 60px 0 40px;
+    padding: 22px 0 40px;
     width: 284px;
     height: 204px;
   }
@@ -515,6 +519,8 @@
     min-height: 127px;
   }
   .quote__name {
+    margin: 0;
+    padding: 0 0 3px 0;
     font-size: 14px;
     line-height: 22px;
   }
@@ -557,18 +563,22 @@
 .track__text {
   margin: 0;
   padding: 0 859px 0 0;
-  max-width: 460px;
+  min-width: 460px;
 }
 
 @media screen and (max-width: 360px) {
   .track {
+    margin: 0 auto;
+    padding: 0 0 80px;
     max-width: 284px;
     display: flex;
     position: relative;
+    border-bottom: 1px solid #e3e3e3;
+    row-gap: 40px;
   }
   .track__heading-container {
     margin: 0;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     min-width: 108px;
     order: 0;
   }
@@ -607,7 +617,7 @@
 @media screen and (max-width: 360px) {
   .type {
     margin: 0;
-    padding: 0 0 40px 0;
+    padding: 0 0 0 0;
   }
   .type__image {
     width: 284px;
@@ -717,6 +727,7 @@
     position: absolute;
     top: 45px;
     right: 0;
+    column-gap: 12px;
   }
   .buttons-swipe__button-left {
     margin: 0;
@@ -749,10 +760,38 @@
   margin: 0;
   padding: 0;
 }
+.bicycles__selector {
+  display: none;
+}
 
+@media screen and (max-width: 360px) {
+  .bicycles {
+    margin: 0 auto;
+    padding: 35px 0 80px;
+    max-width: 284px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .bicycles__menu {
+    margin: 0;
+    padding: 0;
+  }
+  .bicycles__selector {
+    margin: 40px 0 0;
+    padding: 8px 0 8px 12px;
+    display: block;
+    width: 114px;
+    height: 30px;
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
 .navigation {
-  padding: 1px;
-  margin: 1px;
+  margin: 0;
+  padding: 0;
 }
 .navigation__list {
   margin: 0;
@@ -796,6 +835,11 @@
   opacity: 0.65;
 }
 
+@media screen and (max-width: 360px) {
+  .navigation {
+    display: none;
+  }
+}
 .grid {
   margin: 0 auto;
   padding: 0 120px 60px;
@@ -805,6 +849,9 @@
   padding: 0;
   display: flex;
   column-gap: 30px;
+}
+.grid__navigation::-webkit-scrollbar {
+  height: 0;
 }
 .grid__navigation_hidden {
   display: none;
@@ -843,7 +890,61 @@
 .grid__name_dark-theme {
   color: #ffffff;
 }
+.grid__scroll {
+  margin: 36px auto 0;
+  padding: 0;
+  display: none;
+  column-gap: 5px;
+  justify-content: center;
+}
+.grid__button-scroll {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/Ellipse\ 8.png);
+  width: 4px;
+  height: 4px;
+  background-color: #cacaca;
+  border: 0;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.grid__button-scroll_active {
+  opacity: 1;
+}
 
+@media screen and (max-width: 360px) {
+  .grid {
+    margin: 0;
+    padding: 37px 0 0 0;
+  }
+  .grid__image {
+    margin: 0;
+    padding: 0;
+    width: 254.11px;
+    height: 254.11px;
+  }
+  .grid__name {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+  .grid__navigation {
+    overflow-x: scroll;
+    column-gap: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  .grid__item {
+    margin: 0;
+    padding: 0 14.95px 0;
+    scroll-snap-align: center;
+  }
+  .grid__scroll {
+    display: flex;
+  }
+}
 .training {
   margin: 0 auto;
   padding: 0;
@@ -899,7 +1000,47 @@
   width: 580px;
   height: 460px;
 }
+.training__image_mobile {
+  display: none;
+}
 
+@media screen and (max-width: 360px) {
+  .training {
+    margin: 0 auto;
+    padding: 0 0 60px 0;
+    max-width: 284px;
+  }
+  .training__heading {
+    margin: 0;
+    padding: 38px 0;
+    max-width: 284px;
+  }
+  .training__image {
+    display: none;
+  }
+  .training__image_mobile {
+    margin: 0;
+    padding: 0 0 40px;
+    display: block;
+    width: 284px;
+    height: 225px;
+  }
+  .training__description {
+    margin: 0;
+    padding: 0;
+    min-height: 130px;
+    max-width: 284px;
+  }
+  .training__menu {
+    margin: 0;
+    padding: 0;
+    max-width: 284px;
+  }
+  .training__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 .footer {
   margin: 0px;
   padding: 0;
@@ -943,7 +1084,46 @@
 .footer__privacy_dark-theme {
   color: #565656;
 }
+.footer__setting {
+  display: none;
+}
 
+@media screen and (max-width: 360px) {
+  .footer__box {
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+    max-width: 284px;
+  }
+  .footer__heading {
+    padding-bottom: 40px;
+  }
+  .footer__container {
+    margin: 0;
+    padding: 0;
+    max-width: 284px;
+    position: relative;
+  }
+  .footer__privacy {
+    font-style: normal;
+    font-weight: 500;
+  }
+  .footer__switcher {
+    display: none;
+  }
+  .footer__setting {
+    display: block;
+    background-image: url(../images/logo__COLOR_main-1.svg);
+    width: 38px;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 248px;
+    right: -5px;
+  }
+}
 .form-container {
   margin: 0 0 100px 0;
   padding: 0;
@@ -1027,4 +1207,11 @@
 }
 .form-container__submit_on {
   visibility: visible;
+}
+
+@media screen and (max-width: 360px) {
+  .form-container {
+    width: 284px;
+    height: 50px;
+  }
 }/*# sourceMappingURL=index.css.map */

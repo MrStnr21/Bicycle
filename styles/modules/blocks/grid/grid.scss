@@ -6,6 +6,10 @@
     display: flex;
     column-gap: 30px;
 
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+
     &_hidden {
       display: none;
     }
@@ -44,6 +48,63 @@
 
     &_dark-theme {
       color: $heading-color_dark-theme;
+    }
+  }
+
+  &__scroll {
+    @include marginPadding(36px auto 0, 0);
+    display: none;
+    column-gap: 5px;
+    justify-content: center;
+  }
+
+  &__button-scroll {
+    @include marginPadding(0, 0);
+    background-image: url(../images/Ellipse\ 8.png);
+    width: 4px;
+    height: 4px;
+    background-color: #cacaca;
+    border: 0;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &_active {
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .grid {
+    @include marginPadding(0, 37px 0 0 0);
+
+    &__image {
+      @include marginPadding(0, 0);
+      width: 254.11px;
+      height: 254.11px;
+    }
+
+    &__name {
+      @include marginPadding(0, 0);
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
+
+    &__navigation {
+      overflow-x: scroll;
+      column-gap: 0;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+    }
+
+    &__item {
+      @include marginPadding(0, 0 14.95px 0);
+      scroll-snap-align: center;
+    }
+
+    &__scroll {
+      display: flex;
     }
   }
 }

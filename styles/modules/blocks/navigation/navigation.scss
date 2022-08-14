@@ -1,6 +1,5 @@
 .navigation {
-  padding: 1px;
-  margin: 1px;
+  @include marginPadding(0,0);
 
   &__list {
     @include marginPadding(0, 0);
@@ -46,5 +45,11 @@
         opacity: 0.65;
       }
     }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navigation {
+    display: none;
   }
 }

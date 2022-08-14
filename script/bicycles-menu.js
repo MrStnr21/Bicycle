@@ -5,6 +5,10 @@ const TTButton = document.querySelector("#TTButton");
 const highwayBicycles = document.querySelector("#highway-bicycles");
 const gravelBicycles = document.querySelector("#gravel-bicycles");
 const TTBicycles = document.querySelector("#TT-bicycles");
+const firstBicycle = document.querySelector("#firstImage");
+const secondBicycle = document.querySelector("#secondImage");
+const thirdBicycle = document.querySelector("#thirdImage");
+const bicyclesList = document.querySelector(".grid__navigation");
 
 //функция перелючения типов велосипедов
 function addType(element) {
@@ -61,4 +65,25 @@ gravelButton.addEventListener("click", () => {
 
 TTButton.addEventListener("click", () => {
   chooseTT();
+});
+
+firstBicycle.addEventListener("click", function scrollBicyclesFirst() {
+  bicyclesList.scrollTo(0, 0);
+  firstBicycle.classList.add("grid__button-scroll_active");
+  secondBicycle.classList.remove("grid__button-scroll_active");
+  thirdBicycle.classList.remove("grid__button-scroll_active");
+});
+
+secondBicycle.addEventListener("click", function scrollBicyclesSecond() {
+  bicyclesList.scrollTo(300, 0);
+  firstBicycle.classList.remove("grid__button-scroll_active");
+  secondBicycle.classList.add("grid__button-scroll_active");
+  thirdBicycle.classList.remove("grid__button-scroll_active");
+});
+
+thirdBicycle.addEventListener("click", function scrollBicyclesThird() {
+  bicyclesList.scrollTo(600, 0);
+  firstBicycle.classList.remove("grid__button-scroll_active");
+  secondBicycle.classList.remove("grid__button-scroll_active");
+  thirdBicycle.classList.add("grid__button-scroll_active");
 });

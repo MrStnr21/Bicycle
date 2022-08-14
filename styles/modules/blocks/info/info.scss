@@ -54,7 +54,7 @@
     }
 
     &__text {
-      @include marginPadding(0 auto, 40px 0);
+      @include marginPadding(0 auto, 40px 0 33px);
       max-width: 284px;
       min-height: 80px;
     }

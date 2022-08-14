@@ -56,10 +56,14 @@
 
 @media screen and (max-width: 360px) {
   .quote {
+    @include marginPadding(0 auto, 0 0 80px 0);
+    max-width: 284px;
     flex-direction: column;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
 
     &__image {
-      @include marginPadding(0 auto, 60px 0 40px);
+      @include marginPadding(0 auto, 22px 0 40px);
       width: 284px;
       height: 204px;
     }
@@ -77,6 +81,7 @@
     }
 
     &__name {
+      @include marginPadding(0, 0 0 3px 0);
       font-size: 14px;
       line-height: 22px;
     }

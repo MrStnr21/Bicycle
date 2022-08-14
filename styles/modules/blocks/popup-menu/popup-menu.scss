@@ -2,12 +2,11 @@
   @include marginPadding(0, 0);
   background-color: #f4f4f4;
   position: fixed;
-  height: 566px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 3;
+  z-index: 3;
 
   &__container {
     position: relative;

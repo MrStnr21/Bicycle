@@ -18,9 +18,9 @@
 
 @media screen and (max-width: 360px) {
   .popup {
-    top: 385px;
+    top: 355px;
     right: 68px;
-    height: 1px;
+    height: 200px;
 
     &__image {
       @include marginPadding(0, 10.67px 26.59px);

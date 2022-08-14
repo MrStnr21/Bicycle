@@ -234,7 +234,18 @@
               </ul>
             </nav>
           </div>
-          <nav class="grid bicycles__grid">
+          <select form="bikes" class="bicycles__selector">
+            <option id="option-highway" value="Шоссе" class="bicycles__option">
+              Шоссе
+            </option>
+            <option id="option-gravel" value="Грэвел" class="bicycles__option">
+              Грэвел
+            </option>
+            <option id="option-TT" value="ТТ" class="bicycles__option">
+              ТТ
+            </option>
+          </select>
+          <nav id="bikes" class="grid bicycles__grid">
             <ul id="highway-bicycles" class="grid__navigation">
               <li class="grid__item">
                 <a
@@ -374,10 +385,32 @@
               </li>
             </ul>
           </nav>
+          <div class="grid__scroll">
+            <button
+              id="firstImage"
+              type="button"
+              class="grid__button-scroll grid__button-scroll_active"
+            ></button>
+            <button
+              id="secondImage"
+              type="button"
+              class="grid__button-scroll"
+            ></button>
+            <button
+              id="thirdImage"
+              type="button"
+              class="grid__button-scroll"
+            ></button>
+          </div>
         </section>
         <section class="training">
           <div class="training__text">
             <h2 class="training__heading heading">Тренировки</h2>
+            <img
+            src="./images/training_track.png"
+            alt="тренировки/трек"
+            class="training__image_mobile"
+          />
             <p class="training__description text">
               Чтобы найти маршрут для тренировки можно воспользоваться сервисом
               Komoot, а записать эти тренировки поможет приложение Strava, а
@@ -426,7 +459,8 @@
               </p>
               <button class="form-container__submit">ok</button>
             </div>
-            <p class="footer__privacy">© Yaroslav Vice 2022</p>
+            <p class="footer__privacy">© Yaroslav Potrapelyuk 2022</p>
+            <button type="button" class="footer__setting"></button>
           </div>
           <div class="switcher footer__switcher">
             <img

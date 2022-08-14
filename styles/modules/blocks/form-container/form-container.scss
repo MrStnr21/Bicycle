@@ -93,3 +93,10 @@
     }
   }
 }
+
+@media screen and (max-width: 360px) {
+  .form-container {
+    width: 284px;
+    height: 50px;
+  }
+}
