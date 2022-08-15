@@ -36,7 +36,21 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1320px) {
+  .track {
+    max-width: 960px;
+
+    &__heading-container {
+      @include marginPadding(0, 60px 0 50px 60px);
+    }
+
+    &__text-container {
+      @include marginPadding(0, 0 0 80px 60px);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
   .track {
     @include marginPadding(0 auto, 0 0 80px);
     max-width: 284px;

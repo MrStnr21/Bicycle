@@ -74,7 +74,19 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1320px) {
+  .grid {
+    @include marginPadding(0 auto, 0 60px 60px);
+
+    &__navigation {
+      row-gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
   .grid {
     @include marginPadding(0, 37px 0 0 0);
 
@@ -96,6 +108,7 @@
       column-gap: 0;
       scroll-behavior: smooth;
       scroll-snap-type: x mandatory;
+      flex-wrap: nowrap;
     }
 
     &__item {

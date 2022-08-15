@@ -67,23 +67,55 @@ TTButton.addEventListener("click", () => {
   chooseTT();
 });
 
+function scrollImagesFirst(el) {
+  el.scrollTo(0, 0);
+}
+
+function scrollImagesSecond(el) {
+  el.scrollTo(300, 0);
+}
+
+function scrollImagesThird(el) {
+  el.scrollTo(600, 0);
+}
+
+function activeImage(add, remove1, remove2) {
+  add.classList.add("grid__button-scroll_active");
+  remove1.classList.remove("grid__button-scroll_active");
+  remove2.classList.remove("grid__button-scroll_active");
+}
+
 firstBicycle.addEventListener("click", function scrollBicyclesFirst() {
-  bicyclesList.scrollTo(0, 0);
-  firstBicycle.classList.add("grid__button-scroll_active");
-  secondBicycle.classList.remove("grid__button-scroll_active");
-  thirdBicycle.classList.remove("grid__button-scroll_active");
+  scrollImagesFirst(highwayBicycles);
+  scrollImagesFirst(gravelBicycles);
+  scrollImagesFirst(TTBicycles);
+  activeImage(firstBicycle, secondBicycle, thirdBicycle);
 });
 
 secondBicycle.addEventListener("click", function scrollBicyclesSecond() {
-  bicyclesList.scrollTo(300, 0);
-  firstBicycle.classList.remove("grid__button-scroll_active");
-  secondBicycle.classList.add("grid__button-scroll_active");
-  thirdBicycle.classList.remove("grid__button-scroll_active");
+  scrollImagesSecond(highwayBicycles);
+  scrollImagesSecond(gravelBicycles);
+  scrollImagesSecond(TTBicycles);
+  activeImage(secondBicycle, firstBicycle, thirdBicycle);
 });
 
 thirdBicycle.addEventListener("click", function scrollBicyclesThird() {
-  bicyclesList.scrollTo(600, 0);
-  firstBicycle.classList.remove("grid__button-scroll_active");
-  secondBicycle.classList.remove("grid__button-scroll_active");
-  thirdBicycle.classList.add("grid__button-scroll_active");
+  scrollImagesThird(highwayBicycles);
+  scrollImagesThird(gravelBicycles);
+  scrollImagesThird(TTBicycles);
+  activeImage(thirdBicycle, secondBicycle, firstBicycle);
+});
+
+//функция переключения типа через select
+let select = document.querySelector(".bicycles__selector");
+let bicyclesListSelect = document.querySelectorAll(".grid__navigation");
+let lastIndex = 0;
+
+select.addEventListener("change", function () {
+  bicyclesListSelect[lastIndex].style.display = "none";
+
+  let index = select.selectedIndex;
+  bicyclesListSelect[index].style.display = "flex";
+
+  lastIndex = index;
 });

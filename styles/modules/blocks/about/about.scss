@@ -12,8 +12,20 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1320px) {
+.about {
+  max-width: 960px;
+
+  &__image {
+    height: 730px;
+  }
+}
+}
+
+@media screen and (max-width: 960px) {
   .about {
+    max-width: 284px;
+
     flex-direction: column;
 
     &__image {

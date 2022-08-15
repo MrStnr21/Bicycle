@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 960px) {
   .menu {
     &__container {
       @include marginPadding(0, 144px 0 0 0);

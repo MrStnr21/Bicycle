@@ -28,6 +28,7 @@ const footerPrivacyDark = document.querySelector(".footer__privacy");
 const footerLightDark = document.querySelector(".switcher__light");
 const footerButtonDark = document.querySelector(".switcher__button");
 const footerDarkDark = document.querySelector(".switcher__dark");
+const popupMenu = document.querySelector(".popup-menu");
 
 //функция добавления/удаления класса
 function switchDarkTemplate(element, classname) {
@@ -37,10 +38,6 @@ function switchDarkTemplate(element, classname) {
 function switchThemeSiblings() {
   headingDark.forEach((el) => {
     el.classList.toggle("heading_dark-theme");
-  });
-
-  textDark.forEach((el) => {
-    el.classList.toggle("text_dark-theme");
   });
 
   linkDark.forEach((el) => {
@@ -57,6 +54,10 @@ function switchThemeSiblings() {
 
   trainingLinkDark.forEach((el) => {
     el.classList.toggle("training__link_dark-theme");
+  });
+
+  textDark.forEach((el) => {
+    el.classList.toggle("text_dark-theme");
   });
 }
 
@@ -86,8 +87,9 @@ function switchTheme() {
   switchDarkTemplate(footerButtonDark, "switcher__button_dark-theme");
   switchDarkTemplate(footerDarkDark, "switcher__dark_dark-theme");
   switchDarkTemplate(messege, "form-container__messege_dark-theme");
+  switchDarkTemplate(popupMenu, "popup-menu_dark-theme");
 }
-console.log(darkThemeSwitcher);
+
 //слушатель переключения темы
 darkThemeSwitcher.addEventListener("click", () => {
   switchTheme();

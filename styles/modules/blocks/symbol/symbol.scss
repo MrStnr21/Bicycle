@@ -29,8 +29,13 @@
     display: flex;
   }
 }
+@media screen and (max-width: 1320px) {
+  .symbol {
+    left: 60px;
+  }
+}
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 960px) {
   .symbol {
     width: 70px;
     height: 28px;
