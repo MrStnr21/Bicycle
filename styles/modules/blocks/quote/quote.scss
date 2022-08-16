@@ -23,7 +23,7 @@
     letter-spacing: -0.5px;
     color: $heading-color;
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: $heading-color_dark-theme;
     }
   }
@@ -35,7 +35,7 @@
     line-height: 32px;
     color: $heading-color;
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: $heading-color_dark-theme;
     }
   }
@@ -48,7 +48,7 @@
     color: $text-color;
     opacity: 0.7;
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: $text-color_dark-theme;
     }
   }
@@ -84,7 +84,7 @@
     &__image {
       @include marginPadding(0 auto, 22px 0 40px);
       width: 284px;
-      height: 204px;
+      height: 205px;
     }
 
     &__text {
@@ -96,7 +96,7 @@
       font-size: 23px;
       line-height: 29px;
       max-width: 284px;
-      min-height: 127px;
+      min-height: 125px;
     }
 
     &__name {

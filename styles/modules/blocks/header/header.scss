@@ -7,7 +7,7 @@
     @include marginPadding(0, 0);
     border: none;
     position: absolute;
-    top: 26px;
+    top: 25px;
     right: 18px;
     display: none;
     transition: 0.1s ease-in-out;
@@ -35,6 +35,12 @@
 
     &__button {
       display: block;
+    }
+
+    &__image {
+      &_dark-theme_on {
+        padding: 3px 0;
+      }
     }
   }
 }

@@ -3,17 +3,14 @@
   @include heading;
   color: $heading-color;
 
-  &_dark-theme {
+  &_dark-theme_on {
     color: $heading-color_dark-theme;
   }
 }
 
 @media screen and (max-width: 960px) {
   .heading {
-    font-style: normal;
-    font-weight: 700;
     font-size: 32px;
     line-height: 40px;
-    letter-spacing: -0.5px;
   }
 }

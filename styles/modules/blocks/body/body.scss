@@ -2,7 +2,7 @@
   @include marginPadding(0, 0);
   background-color: $background-color;
 
-  &_dark-theme {
+  &_dark-theme_on {
     background-color: $background-color_dark-theme;
   }
 }

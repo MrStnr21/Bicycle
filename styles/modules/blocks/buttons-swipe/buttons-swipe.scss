@@ -16,7 +16,7 @@
     cursor: pointer;
     transition: 0.1s ease-out;
 
-    &_dark-theme {
+    &_dark-theme_on {
       background-color: rgba(67, 67, 67, 1);
       background-image: url(../images/arrow-left-dark.svg);
     }
@@ -39,7 +39,7 @@
     cursor: pointer;
     transition: 0.1s ease-out;
 
-    &_dark-theme {
+    &_dark-theme_on {
       background-image: url(../images/arrow-right-dark.svg);
       background-color: rgba(67, 67, 67, 1);
     }
@@ -60,7 +60,7 @@
   .buttons-swipe {
     @include marginPadding(0, 0);
     position: absolute;
-    top: 45px;
+    top: 49px;
     right: 0;
     column-gap: 12px;
 

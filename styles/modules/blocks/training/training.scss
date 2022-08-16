@@ -40,7 +40,7 @@
     text-decoration: none;
     transition: 0.1s ease-out;
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: $heading-color_dark-theme;
     }
 
@@ -91,14 +91,14 @@
     max-width: 284px;
 
     &__heading {
-      @include marginPadding(0, 38px 0);
+      @include marginPadding(0, 36px 0 41px 0);
       max-width: 284px;
     }
 
     &__image {
       display: none;
       &_mobile {
-        @include marginPadding(0, 0 0 40px);
+        @include marginPadding(0, 0 0 39px);
         display: block;
         width: 284px;
         height: 225px;

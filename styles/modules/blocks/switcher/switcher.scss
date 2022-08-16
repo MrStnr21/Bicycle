@@ -8,13 +8,13 @@
   align-items: center;
 
   &__light {
-    &_dark-theme {
+    &_dark-theme_on {
       opacity: 0.3;
     }
   }
 
   &__dark {
-    &_dark-theme {
+    &_dark-theme_on {
       opacity: 0.3;
     }
   }
@@ -30,7 +30,7 @@
     position: relative;
     transition-duration: 0.3s;
 
-    &_dark-theme {
+    &_dark-theme_on {
       background: rgba(84, 84, 84, 1);
     }
 

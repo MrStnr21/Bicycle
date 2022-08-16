@@ -1,3 +1,4 @@
+@import "../vendor/fonts.scss";
 @import "./modules/variable.scss";
 @import "./modules/mixins.scss";
 
@@ -26,6 +27,7 @@
 
 @import "./modules/blocks/bicycles/bicycles.scss";
 @import "./modules/blocks/navigation/navigation.scss";
+@import "./modules/blocks/grid-scroll/grid-scroll.scss";
 @import "./modules/blocks/grid/grid.scss";
 
 @import "./modules/blocks/training/training.scss";

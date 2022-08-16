@@ -8,11 +8,12 @@
   align-items: center;
   justify-content: space-evenly;
 
-  &_dark-theme {
+  &_dark-theme_on {
     border: 1px solid rgba(125, 125, 125, 0.5);
   }
 
   &__form {
+    @include marginPadding(0 0 5px 11px, 0);
     width: 240px;
     font-weight: 500;
     font-size: 13px;
@@ -36,7 +37,7 @@
       color: #151515;
     }
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: #ffffff;
       opacity: 0.7;
 
@@ -59,7 +60,7 @@
       display: none;
     }
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: #ffffff;
     }
   }
@@ -84,7 +85,7 @@
       opacity: 0.7;
     }
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: rgba(255, 255, 255, 1);
     }
 

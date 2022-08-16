@@ -47,7 +47,7 @@
 
 @media screen and (max-width: 960px) {
   .button {
-    @include marginPadding(0 auto, 13px 10px);
+    @include marginPadding(0 auto, 13px 10px 14px);
     font-size: 13px;
     line-height: 19px;
     width: 284px;

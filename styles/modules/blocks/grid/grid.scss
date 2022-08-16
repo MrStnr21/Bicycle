@@ -5,6 +5,7 @@
     @include marginPadding(0, 0);
     display: flex;
     column-gap: 30px;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
       height: 0;
@@ -46,16 +47,9 @@
     font-size: 18px;
     line-height: 22px;
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: $heading-color_dark-theme;
     }
-  }
-
-  &__scroll {
-    @include marginPadding(36px auto 0, 0);
-    display: none;
-    column-gap: 5px;
-    justify-content: center;
   }
 
   &__button-scroll {
@@ -109,15 +103,12 @@
       scroll-behavior: smooth;
       scroll-snap-type: x mandatory;
       flex-wrap: nowrap;
+      justify-content: normal;
     }
 
     &__item {
       @include marginPadding(0, 0 14.95px 0);
       scroll-snap-align: center;
-    }
-
-    &__scroll {
-      display: flex;
     }
   }
 }

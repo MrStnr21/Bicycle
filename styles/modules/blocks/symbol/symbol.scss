@@ -9,6 +9,7 @@
   display: flex;
   overflow-x: scroll;
   align-items: flex-end;
+  scrollbar-width: none;
 
   &::-webkit-scrollbar {
     height: 0;
@@ -39,11 +40,12 @@
   .symbol {
     width: 70px;
     height: 28px;
-    top: 253px;
+    top: 255px;
     left: 0;
     background-size: 70px;
 
     &__vector {
+      @include marginPadding(0, 0 34px 8px 11px);
       width: 35px;
     }
   }

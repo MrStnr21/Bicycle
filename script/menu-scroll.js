@@ -6,6 +6,9 @@ const buttonDetail = document.querySelector(".button");
 const buttonTracks = document.querySelector("#tracks");
 const buttonBicycles = document.querySelector("#bicycles");
 const buttonTrainings = document.querySelector("#trainings");
+const buttonTracksMobile = document.querySelector("#tracks-mobile");
+const buttonBicyclesMobile = document.querySelector("#bicycles-mobile");
+const buttonTrainingsMobile = document.querySelector("#trainings-mobile");
 
 //функция скролла
 function scrollingDetail() {
@@ -29,3 +32,18 @@ buttonDetail.addEventListener("click", scrollingDetail);
 buttonTracks.addEventListener("click", scrollingTrack);
 buttonBicycles.addEventListener("click", scrollingBicycles);
 buttonTrainings.addEventListener("click", scrollingTrainings);
+
+buttonTracksMobile.addEventListener("click", () => {
+  scrollingTrack();
+  headerMenu.classList.add("popup-menu_hidden");
+});
+
+buttonBicyclesMobile.addEventListener("click", () => {
+  scrollingBicycles();
+  headerMenu.classList.add("popup-menu_hidden");
+});
+
+buttonTrainingsMobile.addEventListener("click", () => {
+  scrollingTrainings();
+  headerMenu.classList.add("popup-menu_hidden");
+});

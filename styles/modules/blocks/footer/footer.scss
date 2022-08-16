@@ -3,7 +3,7 @@
   width: 100%;
   background-color: #efefef;
 
-  &_dark-theme {
+  &_dark-theme_on {
     background-color: #2f2f2f;
   }
 
@@ -28,7 +28,7 @@
     line-height: 32px;
     color: $heading-color;
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: $heading-color_dark-theme;
     }
   }
@@ -40,7 +40,7 @@
     line-height: 20px;
     color: #cfcfcf;
 
-    &_dark-theme {
+    &_dark-theme_on {
       color: #565656;
     }
   }

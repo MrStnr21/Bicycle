@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 960px) {
   .bicycles {
-    @include marginPadding(0 auto, 35px 0 80px);
+    @include marginPadding(0 auto, 39px 0 80px);
     max-width: 284px;
     border-bottom: 1px solid #e3e3e3;
 
@@ -39,7 +39,7 @@
     }
 
     &__selector {
-      @include marginPadding(40px 0 0, 8px 0 8px 12px);
+      @include marginPadding(40px 0 0, 8px 0 8px 8px);
       display: block;
       width: 114px;
       height: 30px;

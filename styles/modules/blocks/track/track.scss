@@ -9,6 +9,7 @@
     @include marginPadding(0, 60px 0 50px 120px);
     display: flex;
     overflow-x: scroll;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
       height: 0;
@@ -24,6 +25,7 @@
     @include marginPadding(0, 0 0 80px 120px);
     display: flex;
     overflow-x: scroll;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
       height: 0;
@@ -57,10 +59,10 @@
     display: flex;
     position: relative;
     border-bottom: 1px solid #e3e3e3;
-    row-gap: 40px;
+    row-gap: 35px;
 
     &__heading-container {
-      @include marginPadding(0, 40px 0 0 0);
+      @include marginPadding(0, 41px 0 4px 0);
       min-width: 108px;
       order: 0;
     }

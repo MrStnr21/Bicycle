@@ -1,0 +1,12 @@
+.grid-scroll {
+  @include marginPadding(36px auto 0, 0);
+  display: none;
+  column-gap: 5px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .grid-scroll {
+    display: flex;
+  }
+}
