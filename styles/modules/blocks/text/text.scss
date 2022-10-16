@@ -1,0 +1,16 @@
+.text {
+  @include marginPadding(0, 0 0 53px 0);
+  @include text;
+  color: $text-color;
+
+  &_dark-theme_on {
+    color: $text-color_dark-theme;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,93 @@
+.footer {
+  @include marginPadding(0px, 0);
+  width: 100%;
+  background-color: #efefef;
+
+  &_dark-theme_on {
+    background-color: #2f2f2f;
+  }
+
+  &__box {
+    @include marginPadding(0 auto, 0);
+    max-width: 1440px;
+    position: relative;
+  }
+
+  &__container {
+    @include marginPadding(0, 80px 0 60px 120px);
+    max-width: 360px;
+    position: relative;
+  }
+
+  &__heading {
+    margin: 0;
+    padding-bottom: 50px;
+    max-width: 229px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $heading-color;
+
+    &_dark-theme_on {
+      color: $heading-color_dark-theme;
+    }
+  }
+
+  &__privacy {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #cfcfcf;
+
+    &_dark-theme_on {
+      color: #565656;
+    }
+  }
+
+  &__setting {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    &__box {
+      @include marginPadding(0 auto, 60px 0 0 0);
+      max-width: 284px;
+    }
+
+    &__heading {
+      padding-bottom: 40px;
+    }
+
+    &__container {
+      @include marginPadding(0, 0);
+      max-width: 284px;
+      position: relative;
+    }
+
+    &__privacy {
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    &__switcher {
+      display: none;
+    }
+
+    &__setting {
+      display: block;
+      background-image: url(../images/logo__COLOR_main-1.svg);
+      width: 38px;
+      height: 38px;
+      background-color: rgba(0, 0, 0, 0);
+      background-repeat: no-repeat;
+      border: 0;
+      cursor: pointer;
+      position: absolute;
+      top: 248px;
+      right: -5px;
+    }
+  }
+}

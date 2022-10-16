@@ -1,0 +1,81 @@
+.buttons-swipe {
+  @include marginPadding(0, 0 0 59px 120px);
+  display: flex;
+  column-gap: 20px;
+
+  &__button-left {
+    @include marginPadding(0, 0);
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/arrow-left.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+
+    &_dark-theme_on {
+      background-color: rgba(67, 67, 67, 1);
+      background-image: url(../images/arrow-left-dark.svg);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__button-right {
+    @include marginPadding(0, 0);
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/arrow-right.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s ease-out;
+
+    &_dark-theme_on {
+      background-image: url(../images/arrow-right-dark.svg);
+      background-color: rgba(67, 67, 67, 1);
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .buttons-swipe {
+    @include marginPadding(0, 0 0 59px 60px);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .buttons-swipe {
+    @include marginPadding(0, 0);
+    position: absolute;
+    top: 49px;
+    right: 0;
+    column-gap: 12px;
+
+    &__button-left {
+      @include marginPadding(0, 0);
+      width: 24px;
+      height: 24px;
+      background-size: 7px;
+    }
+
+    &__button-right {
+      @include marginPadding(0, 0);
+      width: 24px;
+      height: 24px;
+      background-size: 7px;
+    }
+  }
+}

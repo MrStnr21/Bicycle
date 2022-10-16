@@ -1,0 +1,44 @@
+.type {
+  @include marginPadding(0, 0 0 50px 120px);
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+
+  &__item {
+    list-style: none;
+    width: 650px;
+    padding-right: 40px;
+  }
+
+  &__image {
+    @include marginPadding(0, 0);
+    width: 650px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .type {
+    @include marginPadding(0, 0 0 50px 60px);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .type {
+    @include marginPadding(0, 2px 0 0 0);
+
+    &__image {
+      width: 284px;
+      height: 175px;
+    }
+
+    &__item {
+      width: 284px;
+      padding-right: 40px;
+    }
+  }
+}

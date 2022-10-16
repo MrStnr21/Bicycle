@@ -1,0 +1,54 @@
+.bicycles {
+  @include marginPadding(0 auto, 0);
+  max-width: 1440px;
+
+  &__menu {
+    @include marginPadding(0 auto, 64px 120px 120px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__heading {
+    @include marginPadding(0, 0);
+  }
+
+  &__selector {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .bicycles {
+    max-width: 960px;
+
+    &__menu{
+      @include marginPadding(0 auto, 64px 60px 120px);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bicycles {
+    @include marginPadding(0 auto, 39px 0 80px);
+    max-width: 284px;
+    border-bottom: 1px solid #e3e3e3;
+
+    &__menu {
+      @include marginPadding(0, 0);
+    }
+
+    &__selector {
+      @include marginPadding(40px 0 0, 8px 0 8px 8px);
+      display: block;
+      width: 114px;
+      height: 30px;
+      border: 1px solid #e3e3e3;
+      border-radius: 2px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 14px;
+    }
+  }
+}

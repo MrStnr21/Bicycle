@@ -1,0 +1,124 @@
+.training {
+  @include marginPadding(0 auto, 0);
+  max-width: 1440px;
+  display: flex;
+  column-gap: 160px;
+
+  &__heading {
+    @include marginPadding(0, 153px 0 45px 120px);
+    max-width: 460px;
+  }
+
+  &__description {
+    @include marginPadding(0, 0 0 0 120px);
+    min-height: 322px;
+    max-width: 460px;
+  }
+
+  &__menu {
+    @include marginPadding(0, 0 0 120px 120px);
+    max-width: 460px;
+  }
+
+  &__list {
+    @include marginPadding(0, 0);
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    @include marginPadding(0, 0);
+    min-height: 28px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #151515;
+    text-decoration: none;
+    transition: 0.1s ease-out;
+
+    &_dark-theme_on {
+      color: $heading-color_dark-theme;
+    }
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__image {
+    @include marginPadding(0, 150px 120px 120px 0);
+    width: 580px;
+    height: 460px;
+
+    &_mobile {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .training {
+    max-width: 960px;
+    column-gap: 50px;
+
+    &__heading {
+      @include marginPadding(0, 153px 0 45px 60px);
+    }
+
+    &__description {
+      @include marginPadding(0, 0 0 0 60px);
+      min-height: 260px;
+    }
+
+    &__menu {
+      @include marginPadding(0, 0 0 120px 60px);
+    }
+
+    &__image {
+      @include marginPadding(0, 150px 0 120px 0);
+      height: 395px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .training {
+    @include marginPadding(0 auto, 0 0 60px 0);
+    max-width: 284px;
+
+    &__heading {
+      @include marginPadding(0, 36px 0 41px 0);
+      max-width: 284px;
+    }
+
+    &__image {
+      display: none;
+      &_mobile {
+        @include marginPadding(0, 0 0 39px);
+        display: block;
+        width: 284px;
+        height: 225px;
+      }
+    }
+
+    &__description {
+      @include marginPadding(0, 0);
+      min-height: 130px;
+      max-width: 284px;
+    }
+
+    &__menu {
+      @include marginPadding(0, 0);
+      max-width: 284px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

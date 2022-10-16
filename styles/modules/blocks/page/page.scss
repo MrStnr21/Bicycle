@@ -1,15 +1,17 @@
 .page {
-    min-width: 320px;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    background-color: $background-color;
-    font-family: $font-stack;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
+  min-width: 320px;
+  @include marginPadding(0 auto, 0);
+  position: relative;
+  background-color: $background-color;
+  font-family: $font-stack;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+
+  &_dark-theme_on {
+    background-color: $background-color_dark-theme;
+  }
 }

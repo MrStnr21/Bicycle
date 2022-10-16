@@ -1,0 +1,80 @@
+.track {
+  @include marginPadding(0 auto, 0);
+  max-width: 1440px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__heading-container {
+    @include marginPadding(0, 60px 0 50px 120px);
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+
+  &__heading {
+    @include marginPadding(0, 0 857px 0 0);
+    min-width: 460px;
+  }
+
+  &__text-container {
+    @include marginPadding(0, 0 0 80px 120px);
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+  }
+
+  &__text {
+    @include marginPadding(0, 0 859px 0 0);
+    min-width: 460px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .track {
+    max-width: 960px;
+
+    &__heading-container {
+      @include marginPadding(0, 60px 0 50px 60px);
+    }
+
+    &__text-container {
+      @include marginPadding(0, 0 0 80px 60px);
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .track {
+    @include marginPadding(0 auto, 0 0 80px);
+    max-width: 284px;
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #e3e3e3;
+    row-gap: 35px;
+
+    &__heading-container {
+      @include marginPadding(0, 41px 0 4px 0);
+      min-width: 108px;
+      order: 0;
+    }
+
+    &__text-container {
+      @include marginPadding(0, 0);
+      order: 1;
+    }
+
+    &__text {
+      @include marginPadding(0, 0 859px 0 0);
+      min-width: 284px;
+    }
+  }
+}

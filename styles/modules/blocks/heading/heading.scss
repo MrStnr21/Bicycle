@@ -1,0 +1,16 @@
+.heading {
+  @include marginPadding(0, 0);
+  @include heading;
+  color: $heading-color;
+
+  &_dark-theme_on {
+    color: $heading-color_dark-theme;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

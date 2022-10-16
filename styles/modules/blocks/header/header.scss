@@ -1,3 +1,46 @@
 .header {
-max-width: 1440px;
+  @include marginPadding(0 auto, 0);
+  max-width: 1440px;
+  min-width: 320px;
+
+  &__button {
+    @include marginPadding(0, 0);
+    border: none;
+    position: absolute;
+    top: 25px;
+    right: 18px;
+    display: none;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__image {
+    padding: 5px 0;
+    width: 22px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    &__menu {
+      display: none;
+    }
+
+    &__button {
+      display: block;
+    }
+
+    &__image {
+      &_dark-theme_on {
+        padding: 3px 0;
+      }
+    }
+  }
 }
