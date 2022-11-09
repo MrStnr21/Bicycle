@@ -1,32 +1,32 @@
-<h1 align="center">Hi there, I'm <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc" target="_blank">Yaroslav</a> 
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h3 align="center">Junior Frontend Developer.</h3>
+# Bicycle
+### *Учебный проект от [Яндекс.Практикум](https://practicum.yandex.ru/web/)*
 
-<h2>Проект: bicycles</h2>
+## Описание проекта
+Типовый одностраничный сайт про велосипедный спорт. Содержит меню с описанием треков и велосипедов. Создан в рамках прохождения курса Веб-разработчик плюс.
 
-Функциональность:
+## Функционал:
+- Переключение светлой/темной темы;
+- Адаптивная верстка;
+- Слайдер;
+- Форма.
 
-- Адаптивная верстка
-- Grid
-- Flex
-- Медиазапросы
-- Слайдер
-- Форма
-- Селектор
-- Темная тема
+## Стек технологий:
+- JS;
+- Scss;
+- HTML;
+- БЭМ.
 
-Технологии
-- Flexbox
-- Grid Layout
-- Git
-- js
-- scss
+## Макет Проектной работы в Figma:
+- [Макет](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?node-id=0%3A1)
 
-<h2>Ссылка на макет</h2>
+## Скриншоты:
+<details><summary><b>Развернуть</b></summary>
 
-<a href="https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings_external-link?node-id=0%3A1">Figma</a>
+![mrstnr21 github io_Bicycle_](https://user-images.githubusercontent.com/104725482/200575955-3c349712-e162-4b20-98e6-b4141ee5dd22.png)
 
+![mrstnr21 github io_Bicycle_ (1)](https://user-images.githubusercontent.com/104725482/200575979-46920869-4d2a-4ad7-8b61-f03da950159d.png)
 
-<h2>Ссылка на проект Pages GitHub</h2>
+</details>
 
-<a href="https://mrstnr21.github.io/Bicycle/">bicycles</a>
+## Ссылка на сайт:
+https://mrstnr21.github.io/Bicycle/
